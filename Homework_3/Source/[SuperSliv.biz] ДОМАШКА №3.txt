@@ -1,0 +1,9 @@
+1) Используя все изученные теги, верстаем любую статью из книги сайта журнала! Используем атрибут class
+2) Создаем и подключаем файл CSS.
+3) Прорабатываем разные селекторы и приоритетность
+4) Так же пробуем инлайновые стили и обращение из HTML
+
+Дополнительно можно посмотреть:
+CSS синтаксис: https://www.youtube.com/watch?v=kfOe-F64C_A&list=PLM6XATa8CAG4F9nAIYNS5oAiPotxwLFIr&index=6
+Подключение шрифтов: https://www.youtube.com/watch?v=GwA0BN5RgB0&list=PLM6XATa8CAG4F9nAIYNS5oAiPotxwLFIr&index=15
+CSS Стили шрифта и текста: https://www.youtube.com/watch?v=seewcjGHreg&list=PLM6XATa8CAG4F9nAIYNS5oAiPotxwLFIr&index=7
