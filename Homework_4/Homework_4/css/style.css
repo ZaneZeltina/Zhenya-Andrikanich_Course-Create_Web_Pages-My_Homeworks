@@ -1,0 +1,744 @@
+/* Connect Fonts with Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,700,300italic,italic,500italic,700italic&display=swap');
+
+/* Connect Fonts use local files */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Montserrat-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Italic.woff2') format('woff2'),
+        url('../fonts/Montserrat-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* CSS STYLE RESET */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+	font-size: 16px;
+	font-family: 'Montserrat';
+	font-weight: 500;
+	line-height: 1;
+}
+
+/* -------------------- */
+
+a {
+	color: #6495ed;
+}
+
+a:hover {
+	text-decoration: underline;
+	color:#0000ff;
+}
+
+strong {
+	color:#8a2be2;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 22px;
+	text-decoration: underline;
+	text-shadow: 3px 3px 4px #000;
+	text-transform: uppercase;
+	line-height: 1.5;
+}
+
+span {
+	color:#1e90ff;
+}
+
+i {
+	font-style: italic;
+	color:#8fcd51;
+}
+
+.nav__title {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 34px;
+	font-weight: 700;
+	color:#e83535;
+	text-shadow: 3px 3px 5px #000;
+	text-align: center;
+	text-decoration: underline;
+	text-transform: uppercase;
+	line-height: 1.5;
+}
+
+.nav__link {
+	color: rgb(0, 100, 0);
+	font-style: italic;
+}
+
+.nav__link-second {
+	color: rgb(255, 140, 0);
+	font-style: italic;
+}
+
+.paris__img {
+	width: 800px;
+	height: 600px;
+}
+.about-name__text {
+	color: #808080;
+}
+
+.about-name__text strong {
+	font-family: 'Open Sans', sans-serif;
+	text-shadow: 2px 2px 3px #ffd700;
+	color:#ff1493;
+	line-height: 1.5;
+}
+
+.about-geography__text {
+	color: #8a2be2;
+}
+
+.about-area__text {
+	color: #b8860b;
+}
+
+.about-people__text {
+	color:#61be9f;
+	font-style: italic;
+}
+
+.about-cities__text {
+	color:#a52a2a;
+}
+
+.about-history__text {
+	color:#ff1493;
+}
+
+.about-history__text strong {
+	font-family: 'Open Sans', sans-serif;
+	color: #228b22;
+	text-shadow: 2px 2px 3px #ffff00;
+	text-transform: uppercase;
+	line-height: 1.5;
+}
+
+.about-history__text span {
+	color:#8fcd51;
+}
+
+.about-history__text span ~ span {
+	color:#006400;
+}
+
+.about-history__text span ~ span ~ span{
+	color:#0000ff;
+}
+
+.about-history__text a ~ a {
+	color:#8a2be2;
+	font-style: italic;
+}
+
+.about-history__text a ~ a ~ a {
+	color:#b8860b;
+}
+
+.about-history__text a ~ a ~ a ~ a {
+	color:#a9a9a9;
+}
+
+.about-europe__text {
+	color:#00bfff;
+}
+
+.about-europe__text span {
+	color:#ffd700;
+}
+
+.about-mayor__text {
+	color:#61be9f;
+	font-style: italic;
+}
+
+.about-mayor__text span {
+	color:#00bfff;
+	font-style: normal;
+}
+
+.about-unesco__text {
+	color:#6bc412;
+}
+
+.about-unesco__text a {
+	color:#8a2be2;
+}
+
+.about-unesco__text span {
+	color: #ff8c00;
+}
+
+.about-city__title {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: 700;
+	color:#ff1493;
+	text-shadow: 3px 3px 5px #000;
+	text-align: center;
+	text-decoration: underline;
+	line-height: 1.5;
+}
+
+.about-city__text {
+	color: #808080;
+}
+
+.about-city__text a {
+	color: #a52a2a;
+}
+
+.about-city__text a ~ a {
+	color: #228b22;
+	font-style: italic;
+}
+
+.about-city__text a ~ a ~ a {
+	color: #87ceeb;
+	font-style: italic;
+}
+
+.about-city__text span {
+	color: #ffd700;
+}
+
+.city-name__text {
+	color:#ff1493;
+}
+
+.history__title {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: 700;
+	color:#8fcd51;
+	text-shadow: 3px 3px 5px #000;
+	text-align: center;
+	text-decoration: underline;
+	line-height: 1.5;
+}
+
+.history__text {
+	color:#1e90ff;
+	font-style: italic;
+}
+
+.history__text span {
+	color:#61be9f;
+	font-style: normal;
+}
+
+.history__text span ~ span {
+	color:#0000ff;
+	font-style: normal;
+}
+
+.history__text span ~ span ~ span {
+	color:#6bc412;
+	font-style: normal;
+}
+
+.city-history__text {
+	color:#ff1493;
+}
+
+.city-history__text span{
+	color:#228b22;
+}
+
+.city-history__text span ~ span {
+	color:#00bfff;
+}
+
+.city-history__text a {
+	color: #9932cc;
+}
+
+.city-history__text a ~ a {
+	color:#ffd700;
+}
+
+.history-second__text {
+	color:#61be9f;
+}
+
+.history-second__text a {
+	color:#00bfff;
+}
+
+.history-second__text a ~ a {
+	color:#adff2f;
+}
+
+.history-second__text span {
+	color:rgb(255, 140, 0);
+}
+
+.history-second__text span ~ span {
+	color:rgb(0, 100, 0);
+}
+
+
+
+.geography__title {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: 700;
+	color:#e83535;
+	text-shadow: 3px 3px 5px #000;
+	text-align: center;
+	text-decoration: underline;
+	line-height: 1.5;
+}
+
+.geography__text {
+	color:#8a2be2;
+}
+
+.geography__text a ~ a {
+	color:#ffa500;
+}
+
+.geography__text i {
+	color: #ffff00;
+}
+
+.geography__text i ~ i {
+	color: #008000;
+}
+
+.geography__text span {
+	color: #00bfff;
+}
+
+.geography__text span ~ span {
+	color: #8b0000;
+}
+.geography-time__text {
+	color:#6bc412;
+	font-style: italic;
+}
+
+.geography-north__text {
+	color: #808080;
+}
+
+.geography-area__text {
+	color:#d2691e;
+}
+
+.geography-area__text a {
+	color:#ff1493;
+}
+
+.geography-area__text span {
+	color:#ee82ee;
+}
+
+.geography-highway__text {
+	color:#ffd700;
+}
+
+.geography-river__text {
+	color:#00bfff;
+	font-style: italic;
+}
+
+.geography-river__text a {
+	color:#8fcd51;
+}
+
+.geography-river__text span {
+	color:#ff0000;
+}
+
+.geography-river__text span ~ span {
+	color:#ffff00;
+}
+
+.geography-river__text span ~ span ~ span {
+	color:#8b0000;
+}
+
+.geography-river__text span ~ span ~ span ~ span {
+	color:#1e90ff;
+}
+
+.geography-river__text i {
+	color:#8a2be2;
+}
+
+.geography-river__text i ~ i {
+	color:#808080;
+}
+
+.geography-river__text i ~ i ~ i {
+	color:#8b0000;
+}
+
+.geography-river__text i ~ i ~ i ~ i {
+	color:#ff8c00;
+}
+
+.geography-river__text i ~ i ~ i ~ i ~ i {
+	color:#ff1493;
+}
+
+.geography-river__text i ~ i ~ i ~ i ~ i ~ i {
+	color:#0000ff;
+}
+
+.geography-river__text i ~ i ~ i ~ i ~ i ~ i ~ i {
+	color:#ffd700;
+}
+
+.geography-river__text i ~ i ~ i ~ i ~ i ~ i ~ i ~ i {
+	color:#d2691e;
+}
+
+
+.geography-church__text {
+	color:#ff0000;
+}
+
+.geography-view__img {
+	width: 800px;
+	height: 420px;
+}
+
+.geography-view__text {
+	color:#8b0000;
+}
+
+.hydrography__title {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: 700;
+	color:#00bfff;
+	text-shadow: 3px 3px 5px #000;
+	text-align: center;
+	text-decoration: underline;
+	line-height: 1.5;
+}
+
+.hydrography__text {
+	color:#0000ff;
+}
+
+.hydrography__text span {
+	color:#ff7f50;
+}
+
+.hydrography__text a {
+	color:#ee82ee;
+}
+
+.hydrography-city__text {
+	color:#ff0000;
+}
+
+.hydrography-city__text span {
+	color:#228b22;
+}
+
+.hydrography-city__text a {
+	color:#00bfff;
+}
+
+.hydrography-city__text a ~ a {
+	color:#b8860b;
+}
+
+.hydrography-city__text i {
+	color:#61be9f;
+}
+
+.hydrography-city__text i ~ i {
+	color:#6495ed;
+}
+
+.hydrography-river__text {
+	color:#6bc412;
+}
+
+.hydrography-river__text span {
+	color:#006400;
+}
+
+.hydrography-river__text i {
+	color:#ffff00;
+}
+
+.hydrography-river__text i ~ i {
+	color:#ffa500;
+}
+
+.hydrography__img {
+	width: 800px;
+	height: 280px;
+}
+
+.infrastructure__title {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: 700;
+	color:#228b22;
+	text-shadow: 3px 3px 5px #000;
+	text-align: center;
+	text-decoration: underline;
+	line-height: 1.5;
+}
+
+.infrastructure__text {
+	color:#ee82ee;
+}
+
+.infrastructure__text a {
+	color:#8b0000;
+}
+
+.culture__title {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: 700;
+	color:#b8860b;
+	text-shadow: 3px 3px 5px #000;
+	text-align: center;
+	text-decoration: underline;
+	line-height: 1.5;
+}
+
+.culture__text {
+	color:#ff1493;
+}
+
+.culture__text span {
+	color:#d2691e;
+}
+
+.culture__text span ~ span{
+	color:#808080;
+}
+
+.culture-city__text {
+	color:#0000ff;
+}
+
+.culture-city__text a {
+	color:#00bfff;
+}
+
+.culture-sights__title {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: 700;
+	color:#00bfff;
+	text-shadow: 3px 3px 5px #000;
+	text-align: center;
+	text-decoration: underline;
+	line-height: 1.5;
+}
+
+.culture-sights__list {
+	color: #ff0000;
+}
+
+.culture-sights__list span {
+	color: #008000;
+}
+
+.culture-sights__list a ~ a {
+	color:#61be9f;
+}
+
+.sport__title {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: 700;
+	color: #8b0000;
+	text-shadow: 3px 3px 5px #b8860b;
+	text-align: center;
+	text-decoration: underline;
+	line-height: 1.5;
+}
+
+.sport__text {
+	color:#006400;
+}
+
+.sport__text a {
+	color:#ffa500;
+}
+
+.sport__text a ~ a {
+	color:#adff2f;
+}
+
+.sport__text span {
+	color:#ffff00;
+}
+
+.sport-europe__text {
+	color:#1e90ff;
+}
+
+.sport-europe__text a {
+	color:#6bc412;
+}
+
+.sport-europe__text a ~ a {
+	color:#0000ff;
+}
+
+.sport-europe__text i > a {
+	color:#a52a2a;
+}
+
+.sport-europe__text i ~ i > a {
+	color:#61be9f;
+}
+
+.sport-europe__text span{
+	color:#00bfff;
+}
+
+.sport-europe__text i {
+	color:#808080;
+}
+
+.sport-games__text {
+	color:#ff1493;
+}
+
+.sport-games__text a {
+	color:#ff8c00;
+}
+
+.sport-games__text i > a{
+	color:#61be9f;
+}
+
+.cities__title {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: 700;
+	color: #9932cc;
+	text-shadow: 3px 3px 5px #ff1493;
+	text-align: center;
+	text-decoration: underline;
+	line-height: 1.5;
+}
+
+.cities__text {
+	color:#808080;
+}
+
+.cities__list {
+	color:#6bc412;
+}
+
+.cities__list a {
+	color:#00bfff;
+}
+
+.cities-book__text {
+	color:#9932cc;
+	font-size: 20px;
+	font-weight: 500;
+	text-shadow: 2px 2px 3px #ff1493;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+.footer > a {
+	font-size: 18px;
+	color:#6bc412;
+	text-decoration: underline;
+}
+

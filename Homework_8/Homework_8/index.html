@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+  <title>Homework 8</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<header id="top" class="header">
+				<h1 class="page__title">
+					Praktizējamies izmantojot CSS pseido elementus un pseido klases
+				</h1>
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="list__item">
+							<a class="list__link" href="#pseido-1">Pseido klases</a>
+						</li>
+						<li class="list__item">
+							<a class="list__link" href="#pseido-2">Pseido elementi</a>
+						</li>
+						<li class="list__item">
+							<a class="list__link" href="#pseido-3">Pseido klašu stāvokļi 
+								kodā
+							</a>
+						</li>
+						<li class="list__item">
+							<a class="list__link" href="#task-1">Papildus uzdevums Nr.1</a>
+						</li>
+						<li class="list__item">
+							<a class="list__link" href="#task-2">Papildus uzdevums Nr.2</a>
+						</li>
+					</ul>
+				</nav>
+		</header>
+
+
+	<main class="main">
+		
+		<section id="pseido-1" class="task-1">
+			<h2 class="task-1__title">
+				Pseido klases
+			</h2>
+			<h3 class="task-1__title-2">
+				Pseido klases ir klases, kas tiek izmantotas, lai pievienotu papildus 
+				stilus elementam, kad tas ir noteiktā stāvoklī. 
+			</h3>
+			<p class="task-1__text">
+				Pseido klase :hover - tiek izmantota, kad uzvedam uz kāda 
+				elementa ar peli. 
+			</p>
+			<div class="task-1__link-wrapper">
+				<a class="task-1__link-hover link" href="#">:hover</a>
+			</div>
+			<p class="task-1__text">
+				Pseido klase :focus — attiecas tikai tad, ja lietotājs ir fokusā uz 
+				saites - interaktīva elementa, izmantojot klaviatūru - tabulāciju
+        Izmantojot tastatūras pārvaldību
+			</p>
+			<div class="task-1__link-wrapper">
+				<a class="task-1__link-focus link" href="#">:focus</a>
+			</div>
+			<p class="task-1__text">
+				Pseido klase :active — attiecas uz elementu, kad lietotājs uz tā tur 
+				nospiestu peles kreiso taustiņu, un to neatlaiž.
+			</p>
+			<div class="task-1__link-wrapper">
+				<a class="task-1__link-active link" href="#">:active</a>
+			</div>
+			<p class="task-1__text">
+				Pseido klase :visited — attiecas uz saiti, kas jau ir apmeklēta.
+			</p>
+			<div class="task-1__link-wrapper">
+				<a class="task-1__link-visited link" target="_blank" rel="noopener 
+				noreferrer" href="https:/www.google.com">Google</a>
+			</div>
+			<p class="task-1__text">
+				Izmantojam pogu, kas ved uz kādu saiti, šinī gadījumā: uz saiti, kuru 
+				mēs vēl neesam apmeklējuši.
+			</p>
+			<div class="task-1__link-wrapper">
+				<a class="task-1__link link" target="_blank" rel="noopener 
+				noreferrer" href="https:/www.com">Saite</a>
+			</div>
+			<p class="task-1__text">
+				Pseido klase :target — attiecas uz elementu, uz kuru norāda saite, kas 
+				ved uz kādu lapas daļu, kas sākumā nav redzama. Mēs noklikšķinām uz 
+				saites un atveras kāda lapas daļa.
+			</p>
+			<p id="p1" class="task-1__text text-target-1">
+				Pirmais paragrāfs, kam pielietota pseido klase :target.
+				<div class="task-1__link-wrapper">
+				<a class="task-1-paragraph__link link" href="#p1">Paragrāfs Nr. 1</a>
+			</div>
+			</p>
+			<p id="p2" class="task-1__text text-target-1">
+				Otrais paragrāfs, kam pielietota pseido klase :target.
+				<div class="task-1__link-wrapper">
+				<a class="task-1-paragraph__link-2 link" href="#p2">
+					Paragrāfs Nr. 2
+				</a>
+			</div>
+			</p>
+		</section>
+
+		<section id="pseido-2" class="task-2">
+			<h2 class="task-2__title">
+					Pseido elementi
+				</h2>
+				<h3 class="task-2__title-2">
+					Mēs varam no CSS, nemainot neko HTML dokumentā vērsties objektiem 
+					izmantojot tā stāvokli, ievērojot to kārtību, kas mums ir HTML 
+					dokumentā 
+				</h3>
+				<p class="task-2__text">
+					Pseido elements :first-letter — attiecas uz pirmo burtu teksta 
+					elementā.
+				</p>
+				<p class="task-2__text-1">
+					Pirmā burta CSS pseido elements piemēro stilus bloka konteinera pirmās 
+					rindas pirmajam burtam.
+				</p>
+				<p class="task-2__text">
+					Pseido elements :first-line — attiecas uz pirmo teksta rindu.
+				</p>
+				<p class="task-2__text-2">
+					Pirmās rindas CSS pseido elements piemēro stilus bloka konteinera 
+					pirmajai rindai, taču tikai tad, ja pirms tā nav cita satura 
+					(piemēram, attēli vai iekļautas tabulas).
+				</p>
+				<p class="task-2__text">
+					Pseido elements ::selection — attiecas uz tekstu, kas ir izvēlēts, 
+					iezīmējot to ar peles kreiso taustiņu. Izmantots zemāk piemērā.
+				</p>
+				<p class="task-2__text-3">
+					Selection atlasītājs atbilst lietotāja atlasītajai elementa daļai. 
+					Tam var izmantot Tikai dažus CSS parametrus.
+				</p>
+				<h3 class="task-2__text">
+					Pseido elementi ::before un ::after — tiek izmantoti, lai pievienotu 
+					papildus saturu elementam,Tā sākumā vai beigās, kas ir norādīts HTML 
+					dokumentā.
+				</h3>
+				<p class="task-2__text-4">
+					Izmantosim šo tekstu, lai tā sākumā un beigās izmantotu pseido 
+					elementu :before.
+				</p>
+			</section>
+
+		<section id="pseido-3" class="task-3">
+			<h2 class="task-3__title">
+				Pseido klašu stāvokļi kodā
+			</h2>
+			<h3 class="task-3__title-2">
+				Pseido klašu stāvokļus var izmantot, lai pievienotu papildus CSS 
+				parametrus elementam, kad tas ir noteiktā stāvoklī.
+			</h3>
+			<p class="task-3__text">
+				Pseido klases stāvoklis :first-child vēršas pie bloka pirmā elementa. 
+				Izveidojam sarakstu, lai mēs 
+				uzskatāmi redzētu šīs pseido klases darbību mūsu kodā.
+			</p>
+			<ul class="menu__list">
+				<li class="menu__item item">
+					Andris Ābelīte
+				</li>
+				<li class="menu__item item">
+					Ieva Akuratere
+				</li>
+				<li class="menu__item item">
+					Pits Andersons
+				</li>
+				<li class="menu__item item">
+					Aija Andrejeva
+				</li>
+				<li class="menu__item item">
+					Anmary
+				</li>
+				<li class="menu__item item">
+					Aleksandrs Antoņenko
+				</li>
+				<li class="menu__item item">
+					Valdis Atāls
+				</li>
+				<li class="menu__item item">
+					Atis Auzāns
+				</li>
+			</ul>
+			<p class="task-3__text">
+				Pseido klases stāvoklis :last-child vēršas pie bloka pēdējā elementa. 
+				Izveidojam sarakstu, lai mēs 
+				uzskatāmi redzētu šīs pseido klases darbību mūsu kodā.
+			</p>
+			<ul class="menu__list">
+				<li class="menu__item-1 item">
+					Andris Ābelīte
+				</li>
+				<li class="menu__item-1 item">
+					Ieva Akuratere
+				</li>
+				<li class="menu__item-1 item">
+					Pits Andersons
+				</li>
+				<li class="menu__item-1 item">
+					Aija Andrejeva
+				</li>
+				<li class="menu__item-1 item">
+					Anmary
+				</li>
+				<li class="menu__item-1 item">
+					Aleksandrs Antoņenko
+				</li>
+				<li class="menu__item-1 item">
+					Valdis Atāls
+				</li>
+				<li class="menu__item-1 item">
+					Atis Auzāns
+				</li>
+			</ul>
+			<p class="task-3__text">
+				Pseido klases stāvoklis :nth-child(n) vēršas pie bloka elementa, kas 
+				ir norādīts ar skaitli n. Izveidojam sarakstu, lai mēs 
+				uzskatāmi redzētu šīs pseido klases darbību mūsu kodā. Konkrētā 
+				gadījumā mēs iekš iekavām rakstām skaitli (3), kas nozīmē, ka 
+				vēršamies pie trešā elementa mūsu blokā.
+			</p>
+			<ul class="menu__list">
+				<li class="menu__item-2 item">
+					Andris Ābelīte
+				</li>
+				<li class="menu__item-2 item">
+					Ieva Akuratere
+				</li>
+				<li class="menu__item-2 item">
+					Pits Andersons
+				</li>
+				<li class="menu__item-2 item">
+				Aija Andrejeva
+				</li>
+				<li class="menu__item-2 item">
+					Anmary
+				</li>
+				<li class="menu__item-2 item">
+					Aleksandrs Antoņenko
+				</li>
+				<li class="menu__item-2 item">
+					Valdis Atāls
+				</li>
+				<li class="menu__item-2 item">
+					Atis Auzāns
+				</li>
+			</ul>
+			<p class="task-3__text">
+				Pseido klases stāvoklis :nth-child(odd) vēršas pie bloka pāra skaitļa 
+				elementiem. Var rakstīt arī :nth-child(2n+1). Rezultāts būs tieši tāds 
+				pats. Izveidojam sarakstu, lai mēs 
+				uzskatāmi redzētu šīs pseido klases darbību mūsu kodā.
+			</p>
+			<ul class="menu__list">
+				<li class="menu__item-3 item">
+					Andris Ābelīte
+				</li>
+				<li class="menu__item-3 item">
+					Ieva Akuratere
+				</li>
+				<li class="menu__item-3 item">
+					Pits Andersons
+				</li>
+				<li class="menu__item-3 item">
+					Aija Andrejeva
+				</li>
+				<li class="menu__item-3 item">
+					Anmary
+				</li>
+				<li class="menu__item-3 item">
+					Aleksandrs Antoņenko
+				</li>
+				<li class="menu__item-3 item">
+					Valdis Atāls
+				</li>
+				<li class="menu__item-3 item">
+					Atis Auzāns
+				</li>
+			</ul>
+			<p class="task-3__text">
+				Pseido klases stāvoklis :nth-child(even) vēršas pie bloka nepāra 
+				skaitļa elementiem. Var rakstīt arī :nth-child(2n). Rezultāts būs 
+				tieši tāds pats. Izveidojam sarakstu, lai mēs uzskatāmi redzētu šīs 
+				pseido klases darbību mūsu kodā.
+			</p>
+			<ul class="menu__list">
+				<li class="menu__item-4 item">
+					Andris Ābelīte
+				</li>
+				<li class="menu__item-4 item">
+					Ieva Akuratere
+				</li>
+				<li class="menu__item-4 item">
+					Pits Andersons
+				</li>
+				<li class="menu__item-4 item">
+					Aija Andrejeva
+				</li>
+				<li class="menu__item-4 item">
+					Anmary
+				</li>
+				<li class="menu__item-4 item">
+					Aleksandrs Antoņenko
+				</li>
+				<li class="menu__item-4 item">
+					Valdis Atāls
+				</li>
+				<li class="menu__item-4 item">
+					Atis Auzāns
+				</li>
+			</ul>
+			<p class="task-3__text">
+				Pseido klases stāvoklis :nth-child(3n+1) vēršas pie katra bloka 
+				3 elementa, sākot ar otro bloka elementu. Izveidojam sarakstu, lai mēs 
+				uzskatāmi redzētu šīs pseido klases darbību mūsu kodā.
+			</p>
+			<ul class="menu__list">
+				<li class="menu__item-5 item">
+					Andris Ābelīte
+				</li>
+				<li class="menu__item-5 item">
+					Ieva Akuratere
+				</li>
+				<li class="menu__item-5 item">
+					Pits Andersons
+				</li>
+				<li class="menu__item-5 item">
+					Aija Andrejeva
+				</li>
+				<li class="menu__item-5 item">
+					Anmary
+				</li>
+				<li class="menu__item-5 item">
+					Aleksandrs Antoņenko
+				</li>
+				<li class="menu__item-5 item">
+					Valdis Atāls
+				</li>
+				<li class="menu__item-5 item">
+					Atis Auzāns
+				</li>
+			</ul>
+			<p class="task-3__text">
+				Izmantojam pseido klases :nth-child(n+4):nth-child(2n), kas darbojās 
+				sākot ar bloka ceturto elementu, pēc tam ar katru pāra skaitļa 
+				elementu. Izveidojam sarakstu, lai mēs uzskatāmi redzētu šo pseido 
+				klašu darbību mūsu kodā.
+			</p>
+			<ul class="menu__list">
+				<li class="menu__item-6 item">
+					Andris Ābelīte
+				</li>
+				<li class="menu__item-6 item">
+					Ieva Akuratere
+				</li>
+				<li class="menu__item-6 item">
+					Pits Andersons
+				</li>
+				<li class="menu__item-6 item">
+					Aija Andrejeva
+				</li>
+				<li class="menu__item-6 item">
+					Anmary
+				</li>
+				<li class="menu__item-6 item">
+					Aleksandrs Antoņenko
+				</li>
+				<li class="menu__item-6 item">
+					Valdis Atāls
+				</li>
+				<li class="menu__item-6 item">
+					Atis Auzāns
+				</li>
+			</ul>
+			<h2 class="task-3__title">
+				Veidojam stilizētu sarakstu
+			</h2>
+			<h3 class="task-3__title-2">
+				Veidojam stilizētu sarakstu, izmantojot pseido klašu stāvokļus :hover, 
+				:after un :before. Sarakstu stilizēsim dilstošā skaitļu sistēmā. 
+			</h3>
+			<ul class="menu__list-1">
+				<li class="menu__item-7 item">
+					Andris Ābelīte
+				</li>
+				<li class="menu__item-7 item">
+					Ieva Akuratere
+				</li>
+				<li class="menu__item-7 item">
+					Pits Andersons
+				</li>
+				<li class="menu__item-7 item">
+					Aija Andrejeva
+				</li>
+				<li class="menu__item-7 item">
+					Anmary
+				</li>
+				<li class="menu__item-7 item">
+					Aleksandrs Antoņenko
+				</li>
+				<li class="menu__item-7 item">
+					Valdis Atāls
+				</li>
+				<li class="menu__item-7 item">
+					Atis Auzāns
+				</li>
+				<li class="menu__item-7 item">
+					Baiba Ozoliņa
+				</li>
+				<li class="menu__item-7 item">
+					Emīls Balceris
+				</li>
+				<li class="menu__item-7 item">
+					Elizabete Balčus
+				</li>
+				<li class="menu__item-7 item">
+					Rolands Balodis-Ūdris
+				</li>
+			</ul>
+		</section>
+
+		<h2 class="task-1__title">
+			Izstrādājam pirmo bloku no maketa.
+		</h2>
+		<section id="task-1" class="work">
+			<div class="healthy-food">
+        <div class="work">
+          <div class="work__title">
+						how it works
+					</div>
+          <div class="work__choose">
+            <h3 class="work__title-2">
+							Pick meals
+						</h3>
+						<p class="work__text">
+							Choose your meals from our diverse weekly menu. Find gluten or 
+							dairy free, low carb & veggie options.
+						</p>
+          </div>
+          <div class="work__choose">
+            <h3 class="work__title-2">
+							Choose how often
+						</h3>
+						<p class="work__text">
+							Our team of chefs do the prep work - no more chopping, measuring, 
+							or sink full of dishes!</p>
+            </div>
+            <div class="work__choose">
+              <h3 class="work__title-2">
+								fast deliveries
+							</h3>
+							<p class="work__text">
+								Your freshly prepped 15-min dinner kits arrive on your doorstep 
+								in a refrigerated box.
+							</p>
+            </div>
+            <div class="work__choose">
+              <h3 class="work__title-2">
+								tasty meals
+							</h3>
+							<p class="work__text">
+								Gobble makes cooking fast, so you have more 
+								time to unwind and be with family and enjoy of life.
+							</p>
+            </div>
+          </div>
+        </div>
+		</section>
+
+		<h2 class="task-2__title">
+			Izstrādājam otro bloku no maketa.
+		</h2>
+		<section id="task-2" class="car-repair">
+			<div class="promise">
+        <div class="promise__title">
+          <p class="promise__logo">OUR PROMISE TO YOU</p>
+          <h3>Sed perspiciatis omnis iste natus</h3>
+        </div>
+        <div class="promise__service promise__love">
+          <div class="promise__text">
+            <h4>24/7 Love & Care</h4>
+              <p>
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui 
+								blanditiis praesentium corrupti quos dolores et quas.
+							</p>
+          </div>
+        </div>
+        <div class="promise__service promise__veterinarian">
+          <div class="promise__text">
+            <h4>On-site Veterinarian</h4>
+              <p>
+								Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+								sed quia non numquam eius modi tempora incidunt.
+							</p>
+          </div>
+        </div>
+        <div class="promise__service promise__stream">
+          <div class="promise__text">
+            <h4>Live-stream Cameras</h4>
+              <p>
+								Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
+								esse quam nihil molestiae consequatur illum.
+							</p>
+            </div>
+          </div>
+        </div>
+		</section>
+				
+
+	</main>
+
+    <footer class="footer">
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="list__item">
+						<a class="list__link" href="#pseido-1">Pseido klases</a>
+					</li>
+					<li class="list__item">
+						<a class="list__link" href="#pseido-2">Pseido elementi</a>
+					</li>
+					<li class="list__item">
+						<a class="list__link" href="#pseido-3">Pseido klašu stāvokļi 
+							kodā
+						</a>
+					</li>
+					<li class="list__item">
+						<a class="list__link" href="#task-1">Papildus uzdevums Nr.1</a>
+					</li>
+					<li class="list__item">
+						<a class="list__link" href="#task-2">Papildus uzdevums Nr.2</a>
+					</li>
+				</ul>
+			</nav>
+			<a class="footer__link" href="#top">
+		<img class="footer__img" src="img/icons/arrow.png" alt="arrow">
+	</a>
+</footer>
+</div>
+</div>
+</body>
+
+</html>

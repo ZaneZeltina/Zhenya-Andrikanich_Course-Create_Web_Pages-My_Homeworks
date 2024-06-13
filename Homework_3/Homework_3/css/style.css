@@ -1,0 +1,281 @@
+/* CSS Style RESET */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+/* END OF CSS RESET */
+
+/* ---------------- */
+
+body {
+	font-size: 18px;
+}
+
+a {
+	color: cornflowerblue;
+}
+
+a:hover {
+	text-decoration: underline;
+	color:blue;
+}
+strong {
+	color:blueviolet;
+	font-size: 20px;
+}
+
+#img1 {
+	width: 550px;
+	height: 350px;
+}
+
+#up {
+	font-size: 36px;
+	font-weight: 700;
+	color:maroon;
+}
+
+.nav__link {
+	color:darkgreen;
+}
+
+.nav__link-orange {
+	color:darkorange;
+}
+
+.about p {
+	color:dodgerblue;
+}
+
+.town__title {
+	font-size: 24px;
+	font-weight: 700;
+	color:goldenrod;
+}
+
+.town__text {
+	color:forestgreen;
+}
+
+.town__text-red {
+	color:crimson;
+}
+
+.town__text-red span {
+	color:violet;
+	font-style: italic;
+}
+
+.town__text-red a {
+	color:darkgrey;
+}
+
+.town__text-red a:hover {
+	color:blue;
+}
+
+.about__name h2 {
+	font-size: 24px;
+	font-weight: 700;
+	color:blueviolet
+}
+
+.about__name p {
+	color:goldenrod;
+}
+
+.about__name p span {
+	color: forestgreen;
+}
+
+.about__name p span + * {
+	color: darkred;
+}
+
+.history__title {
+	font-size: 24px;
+	font-weight: 700;
+	color:maroon;
+}
+
+.history__text {
+	color:deepskyblue;
+}
+
+.history__text a {
+	color: magenta;
+}
+
+.history__text a:hover {
+	color:blue;
+}
+
+.history__text span {
+	color:grey;
+}
+
+.history__text + p {
+	color:crimson;
+}
+
+.management h2 {
+	font-size: 24px;
+	font-weight: 700;
+	color:forestgreen;
+}
+
+.management p{
+	color:blueviolet;
+}
+
+.management p span{
+	color: red;
+}
+
+.management p a {
+	color:deepskyblue;
+}
+
+.management p a:hover {
+	color:blue;
+}
+
+.management p a ~ a {
+	color: darkred;
+}
+
+.management p a ~ a:hover {
+	color: blue;
+}
+.management p span ~ span {
+	color:greenyellow;
+}
+
+.education h2 {
+	font-size: 24px;
+	font-weight: 700;
+	color: goldenrod;
+}
+
+.education p {
+	color: forestgreen;
+}
+
+.education p ~ p {
+	color: red;
+}
+
+.education p ~ p span {
+	color: darkred;
+}
+
+.education p ~ p ~ p {
+	color:darkgoldenrod;
+}
+
+.education p ~ p ~ p ~ p {
+	color:blueviolet;
+}
+
+.education p ~ p ~ p ~ p span{
+	color:lightsalmon;
+}
+
+.culture h2 {
+	font-size: 24px;
+	font-weight: 700;
+	color:crimson;
+}
+
+.culture p {
+	color:darkcyan;
+}
+
+.culture p span {
+	color: plum;
+}
+
+.culture p a {
+	color:deepskyblue;
+}
+
+.culture p a:hover {
+	color: blue;
+}
+
+.culture p a ~ a {
+	color: red;
+}
+
+.culture p a ~ a:hover {
+	color: blue;
+}
+
+.culture p a ~ a ~ a {
+	color: orange;
+}
+
+.culture p a ~ a ~ a:hover {
+	color: blue;
+}
+
+.culture p a ~ a ~ a ~ a {
+	color: greenyellow;
+}
+
+.culture p a ~ a ~ a ~ a:hover {
+	color: blue;
+}
+
+.culture p a ~ a ~ a ~ a ~ a{
+	color:deepskyblue;
+}
+
+.culture p a ~ a ~ a ~ a ~ a:hover {
+	color: blue;
+}
+
+.culture p a ~ a ~ a ~ a ~ a ~ a {
+	color:blueviolet;
+}
+
+.culture p a ~ a ~ a ~ a ~ a ~ a:hover {
+	color: blue;
+}
+
+.footer a {
+	color: orange;
+}
+
