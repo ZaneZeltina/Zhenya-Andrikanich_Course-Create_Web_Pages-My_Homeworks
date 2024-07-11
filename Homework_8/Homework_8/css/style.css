@@ -529,13 +529,13 @@ body {
 	margin: 0 23px 0 0;
 }
 .promise__love::before {
-	background: url("../img/task_5/dog_love.png") 0 0 no-repeat;
+	background: url("../img/task_5/dog_love.svg") 0 0 no-repeat;
 }
 .promise__veterinarian::before {
-	background: url("../img/task_5/dog_vet.png") 0 0 no-repeat;
+	background: url("../img/task_5/dog_vet.svg") 0 0 no-repeat;
 }
 .promise__stream::before {
-	background: url("../img/task_5/dog_stream.png") 0 0 no-repeat;
+	background: url("../img/task_5/dog_stream.svg") 0 0 no-repeat;
 }
 
 .nav {
