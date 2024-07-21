@@ -47,8 +47,7 @@ body {
 .wrapper {
 	min-height: 100%;
 	padding: 20px;
-	overflow: hidden;
-	background: url("../img/bg.webp") 0 0 / 100% 100% no-repeat fixed;
+	background: url("../img/dark_bg.avif") 0 0 / 100% 100% no-repeat fixed;
 }
 
 .container {
