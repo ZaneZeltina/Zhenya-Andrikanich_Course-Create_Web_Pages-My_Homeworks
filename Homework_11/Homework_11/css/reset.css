@@ -46,7 +46,6 @@ body {
 
 .wrapper {
 	min-height: 100%;
-	padding: 20px;
 	background: url("../img/dark_bg.avif") 0 0 / 100% 100% no-repeat fixed;
 }
 

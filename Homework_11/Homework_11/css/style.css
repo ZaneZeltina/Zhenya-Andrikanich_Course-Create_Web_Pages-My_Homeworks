@@ -2,7 +2,7 @@
 
 /* Connect Fonts with Google Fonts */
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower:regular,700&display=swap");
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
 
@@ -45,6 +45,11 @@ body {
 .main {
 	padding-bottom: 30px;
 	border-radius: 30px;
+}
+
+[class*="__container"] {
+  max-width: 1020px;
+  margin: 0px auto;
 }
 
 .header {
@@ -221,12 +226,180 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.sticky {
+	position: relative;
+	background: url('../img/task_3/nature.avif') 0 0 / cover no-repeat;
+	border-radius: 30px;
+}
 
+.sticky__box {
+	position: relative;
+	min-height: 800px;
+	text-align: right;
+	z-index: 10;
+}
 
+.sticky__item {
+	display: inline-block;
+	position: sticky;
+	top: 75px;
+}
 
+.sticky__img-wrapper {
+	position: relative;
+}
 
+.sticky__img-wrapper::before {
+	content: "i`m position sticky";
+  display: block;
+  font-family: "Indie Flower", sans-serif;
+  position: absolute;
+  width: 100%;
+  top: 13%;
+  left: 50%;
+  font-size: 32px;
+	font-weight: 700;
+	transform: translateX(-65%);
+  color: #ff0000;
+  text-shadow: -2px 4px 7px #000;
+}
 
+.sticky__img_border-radius {
+	border-radius: 50%;
+}
 
+.hero {
+	font-family: "Roboto", sans serif;
+	background: url("../img/hero/hero.avif") 50% / cover no-repeat;
+}
+
+.hero__container {
+  padding: 280px 0px 312px 0px;
+}
+
+.hero__title {
+  max-width: 583px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 56px;
+  color: #fff;
+  margin: 0px 0px 48px 0px;
+}
+
+.hero__button {
+  display: inline-block;
+  max-width: 211px;
+  padding: 17px 34px;
+  filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 
+	24px rgba(38, 38, 38, 0.2));
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 5px;
+  background: #f2726f;
+}
+
+.about {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0;
+}
+
+.about__container {
+  position: relative;
+  background: #5d62b5;
+  border-radius: 40px;
+  padding: 100px 87px 180px;
+  margin: -100px auto;
+}
+
+.about__container::before {
+  content: "";
+  position: absolute;
+  width: 201px;
+  width: 100%;
+  width: 201px;
+  height: 317px;
+  top: -107px;
+  right: -75px;
+  background: url("../img/about/about_bg_top.png") 50% / cover no-repeat;
+}
+
+.about__container::after {
+  content: "";
+  position: absolute;
+  width: 665px;
+  height: 591px;
+  bottom: -147px;
+  left: -15px;
+  background: url("../img/about/about_bg_bot.png") 50%/cover no-repeat;
+  background: url("../img/about/about_bg_bot.png") no-repeat;
+  z-index: 1;
+}
+
+.about__heading {
+  display: inline-block;
+  max-width: 583px;
+  margin: 0px 0px 36px 0px;
+}
+
+.about__logo {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 16px 0px 0px;
+}
+
+.about__subtitle {
+  display: inline-block;
+  max-width: 450px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 27px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #f5f5f5;
+  margin: 0px 0px 33px 0px;
+}
+
+.about__title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #fff;
+}
+
+.about__text {
+  font-style: normal;
+  max-width: 846px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  position: relative;
+  z-index: 2;
+  color: #f5f5f5;
+  margin: 0px 0px 54px 0px;
+}
+
+.about__img {
+  position: relative;
+  filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 
+	24px rgba(38, 38, 38, 0.2));
+  border-radius: 40px;
+  z-index: 2;
+  margin: 0px 0px -300px 0px;
+  width: 100%;
+}
+
+.footer {
+	max-width: 1020px;
+  padding: 280px 0px 20px;
+  margin: 0px auto;
+}
 
 .nav {
 	display: block;
@@ -263,11 +436,10 @@ body {
 }
 
 .footer__img {
-	width: 60px;
-	margin: 0 0 -30px;
-}
-
-.work {
-
+	display: block;
+	align-items: center;
+	padding: 30px 0;
+	width: 70px;
+	margin: 0 auto;
 }
 
