@@ -39,12 +39,6 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
 	line-height: 1.2;
-	color: #222;
-}
-
-.main {
-	padding-bottom: 30px;
-	border-radius: 30px;
 }
 
 [class*="__container"] {
@@ -54,7 +48,7 @@ body {
 
 .header {
 	font-family: "Festive", sans-serif;
-	margin-top: 15px;
+	margin: 15px 0;
 	padding: 30px;
 	border-radius: 30px;
 	vertical-align: top;
@@ -65,7 +59,7 @@ body {
 
 .container {
 	max-width: 1260px;
-  margin: 0px auto;
+  margin: 15px auto;
 }
 
 .page__title {
@@ -73,15 +67,104 @@ body {
 	font-size: 50px;
   font-weight: 700;
   color: #242424;
-  text-shadow: -2px 4px 7px #2f9df8;
+  text-shadow: -2px 4px 7px #83fc7a;
   letter-spacing: 0.03em;
 }
 
-.footer {
-	max-width: 1020px;
-  padding: 280px 0px 20px;
-  margin: 0px auto;
+.main {
+	min-height: 100vh;
+	border-radius: 30px 30px 0 0;
+	position: relative;
+	background: linear-gradient(to bottom, #26afff 0%, #ffffff 58%);
 }
+
+.road {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 300px;
+	background: linear-gradient(to bottom,  #898a89 0%,#0e0e0e 100%);
+	animation: road 4s linear 0s infinite, road 2s linear 3s infinite, road-stop 	3s linear 8s 1 forwards;
+	border-radius: 0 0 30px 30px;
+}
+
+hr {
+	border-top: 25px dashed #f7ff0c;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	transform: translateY(-50%);
+}
+
+.car {
+	z-index: 5;
+	position: absolute;
+	bottom: 140px;
+	left: 30%;
+	transform: translateX(-30%) scale(1.3);
+	max-width: 610px;
+	font-size: 0;
+	animation: car hide 8s linear 4s 1 forwards;
+}
+
+.car__back {
+	position: relative;
+	display: inline-block;
+	width: 360px;
+	height: 250px;
+	background: linear-gradient(to bottom, #3f7af9 0%, #000 100%);
+	border-radius: 20px 20px 0 0;
+}
+
+.car__back::before {
+	content: "";
+	position: absolute;
+	bottom: 85px;
+	right: -35px;
+	width: 35px;
+	height: 100px;
+	background-color: #000;
+}
+
+.car__back::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -15px;
+	width: 15px;
+	height: 180px;
+	border-radius: 20px 0 0 20px;
+	background-color: #000;
+}
+
+.car__title {
+	position: absolute;
+	bottom: 35px;
+	left: 30px;
+	background: linear-gradient(to bottom,  #000 0%,#898a89 100%);
+	border-radius: 20px;
+	width: 300px;
+	height: 180px;
+}
+
+.car__title::before {
+	content: "policija";
+	color: rgb(179, 179, 179);
+	text-shadow: 3px 3px 3px #fff;
+	text-transform: uppercase;
+	font-size: 46px;
+	letter-spacing: 3px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: 900;
+}
+
+
 
 .footer__img {
 	display: block;
