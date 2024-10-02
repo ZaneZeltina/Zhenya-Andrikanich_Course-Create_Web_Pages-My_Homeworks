@@ -79,7 +79,7 @@ body {
   position: relative;
 	overflow: hidden;
 	width: 1300px;
-	min-height: 100vh;
+	min-height: 125vh;
 	margin: 0 auto;
 }
 
@@ -141,10 +141,10 @@ body {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: -7%;
+	top: 10%;
 	left: 0;
 	z-index: 5;
-	background: url('../img/city.png') 50% 100% / 1350px 600px no-repeat;
+	background: url('../img/city.png') 50% 100% / 1350px 700px no-repeat;
 }
 
 .background__sun {
@@ -197,7 +197,7 @@ body {
 }
 
 .background__clouds_1 {
-	top: 15%;
+	top: 5%;
 	animation: clouds-1 40s linear infinite 0s;
 }
 
@@ -211,7 +211,7 @@ body {
 }
 
 .background__clouds_2 {
-	top: 25%;
+	top: 10%;
 	animation: clouds-2 30s linear infinite 0s;
 }
 
@@ -225,7 +225,7 @@ body {
 }
 
 .background__clouds_3 {
-	top: 20%;
+	top: 15%;
 	animation: clouds-3 20s linear infinite 0s;
 }
 
@@ -242,7 +242,7 @@ body {
 	position: absolute;
 	width: 20%;
 	left: 80%;
-	top: 13%;
+	top: 5%;
 	z-index: 5;
 }
 
@@ -261,9 +261,9 @@ body {
 
 .background__wolf {
 	position: absolute;
-	top: 64%;
-	left: 85%;
-	width: 12%;
+	top: 77%;
+	left: 80%;
+	width: 10%;
 	z-index: 7;
 }
 
@@ -271,7 +271,7 @@ body {
   width: 120vw;
   height: 18vw;
   position: absolute;
-  top: 73%;
+  top: 83%;
   min-height: 200px;
   background: #888;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%,  rgba(0, 0, 0, 0.2) 35%, rgba(80, 80, 80, 0.2) 50%,  rgba(30, 30, 30, 0.4) 70%,rgba(60, 60, 60, 0.5) 87%,  rgb(96, 95, 95) 100%);
@@ -298,3 +298,311 @@ body {
   background: repeating-linear-gradient(to right,white,white 8vw,
   transparent 8vw, transparent 20vw);
 }
+
+.background__walk {
+	position: absolute;
+	top: 70%;
+	animation: walking 60s linear infinite 0s;
+}
+
+@keyframes walking {
+	0% {
+		left: -10%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
+.background__ghost {
+	width: 200px;
+	animation: ghost 20s linear infinite normal 0s;
+}
+
+@keyframes ghost {
+	0%, 25%, 50% {
+		opacity: 0;
+}
+	51%, 75%, 99% {
+		opacity: 1;
+}
+}
+
+.page__car::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 80%;
+	z-index: 6;
+	background: url("../img/running_wolf.gif") 0 0 / 32% no-repeat;
+}
+
+.car {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 7;		
+	animation: car 40s linear infinite 0s;
+}
+
+@keyframes car {
+	0% {
+		transform: translate(66%, 30%) scale(0.5);
+}
+	100% {
+		transform: translate(-80%, 30%) scale(0.5);
+}
+}
+
+.body {
+	position: relative;
+	z-index: 7;
+}
+
+.body::before {
+	position: relative;
+	content: "";
+	width: 900px;
+	height: 150px;
+	border-radius: 50%;
+	top: 750px;
+	left: 50px;
+	animation: shadow 20s infinite linear 0s;
+}
+
+@keyframes shadow {
+	0%, 50%, 75%, 100% {
+		background: rgba(0, 0, 0, 0.2);
+	}
+	25% {
+		background: rgba(0, 0, 0, 0.5);
+	}
+}
+
+.body__element-one {
+	position: absolute;
+	width: 633px;
+	height: 367px;
+	transform: translate(254px, 400px);
+	background-color: #e4d196;
+}
+
+.body__element-two {
+	position: absolute;
+	width: 166px;
+	height: 150px;
+	transform: translate(92px, 616px);
+	background-color: #e4d196;
+}
+
+.body__element-three {
+	position: absolute;
+	width: 47px;
+	height: 68px;
+	transform: translate(211px, 552px);
+	background-color: #e4d196;
+}
+
+.body__element-four {
+	position: absolute;
+	width: 0;
+	height: 0;
+	transform: translate(211px, 400px);
+	border-bottom: 152px solid #e4d196;
+	border-left: 43px solid transparent;
+}
+
+.body__element-five {
+	position: absolute;
+	width: 0;
+	height: 0;
+	transform: translate(102px, 550px);
+	border-bottom: 54px solid #e4d196;
+	border-left: 110px solid transparent;
+}
+
+.body__element-six {
+	position: absolute;
+	width: 110px;
+	height: 20px;
+	transform: translate(101px, 601px);
+	background-color: #ddd4b8;
+}
+
+.body__element-seven {
+	position: absolute;
+	transform: translate(92px, 604px);
+	width: 13px;
+	height: 16px;
+	background-color: #ddd4b8;
+	border-radius: 80px 0 0 0;
+}
+
+.decor {
+	position: relative;
+	z-index: 8;
+}
+
+.decor__element-one,
+.decor__element-two,
+.decor__element-three,
+.decor__element-four {
+	position: absolute;
+	width: 795px;
+	height: 85px;
+	transform: translate(92px, 682px);
+	background-color: #f73535;
+}
+
+.decor__element-two {
+	width: 634px;
+	height: 29px;
+	transform: translate(254px, 371px);
+	border: 1px solid #000;
+	box-shadow: inset -8px -8px 3px 0px #b41f1f, inset 8px 0px 3px 0px 
+	#b41f1f;
+	border-radius: 50px 50px 0px 0px;
+}
+
+.decor__element-five,
+.decor__element-six,
+.decor__element-seven,
+.decor__element-eight {
+	position: absolute;
+	width: 38px;
+	height: 2px;
+	box-shadow: inset -2px -1px 1px 0px #504d4d;
+	transform: translate(840px, 670px);
+	background: #ddd4b8;
+	border-radius: 20px;
+}
+
+.decor__element-six {
+	transform: translate(840px, 665px);
+}
+
+.decor__element-seven {
+	transform: translate(840px, 660px);
+}
+
+.decor__element-eight {
+	transform: translate(840px, 655px)
+}
+
+.decor__element-nine {
+	position: absolute;
+	width: 24px;
+	box-shadow: inset -2.5px -1.5px 1px 0px #504d4d;
+	transform: translate(130px, 655px);
+	background: #e0a14d;
+	border-radius: 20px;
+}
+
+.decor__element-ten,
+.decor__element-eleven,
+.decor__element-twelve,
+.decor__element-thirteen,
+.decor__element-fourteen, 
+.decor__element-fifteen,
+.decor__element-sixteen,
+.decor__element-seventeen, 
+.decor__element-eighteen {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	transform: translate(515px, 655px);
+	background: #f73535;
+	border-radius: 50%;
+}
+
+.decor__element-eleven {
+	width: 19px;
+	height: 19px;
+	transform: translate(587px, 650px);
+}
+
+.decor__element-twelve {
+	width: 10px;
+	height: 10px;
+	transform: translate(500px, 565px);
+}
+
+.decor__element-thirteen {
+	width: 16px;
+	height: 16px;
+	transform: translate(520px, 615px);
+}
+
+.decor__element-fourteen{
+	width: 5px;
+	height: 5px;
+	transform: translate(730px, 650px);
+}
+
+.decor__element-fifteen {
+	width: 18px;
+	height: 18px;
+	transform: translate(775px, 660px);
+}
+
+.decor__element-sixteen {
+	width: 30px;
+	height: 30px;
+	transform: translate(835px, 615px);
+}
+
+.decor__element-seventeen {
+	width: 11px;
+	height: 11px;
+	transform: translate(825px, 585px);
+}
+
+.decor__element-eighteen {
+	width: 7px;
+	height: 7px;
+	transform: translate(640px, 665px);
+}
+
+.decor__element-nineteen,
+.decor__element-twenty,
+.decor__element-twenty-one,
+.decor__element-twenty-two {
+	position: absolute;
+	width: 28px;
+	height: 4px;
+	border: 1px solid #c4bb9f;
+	box-shadow: inset -2px -2px 1px 0px #c4bb9f;
+	transform: translate(92px, 618px);
+	background: #c2baa2;
+	border-radius: 20px;
+}
+
+.decor__element-twenty {
+	width: 158px;
+	height: 4px;
+	box-shadow: inset -1px -1px 1px 0px #c4bb9f;
+	transform: translate(111px, 585px) rotate(335deg);
+}
+
+.decor__element-twenty-one{
+	width: 8px;
+	height: 19px;
+	box-shadow: inset -3px 0px 4px 0px #525252, inset 3px 0px 4px 0px 
+	#525252;
+	transform: translate(306px, 352px);
+	background: #a1a1a1;
+}
+
+.decor__element-twenty-two {
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+	background: #a1a1a1;
+	box-shadow: inset 0px -10px 8px 2px #414141;
+	transform: translate(320px, 333.5px);
+}
+
