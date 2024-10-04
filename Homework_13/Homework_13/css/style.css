@@ -196,12 +196,12 @@ body {
 	z-index: 4;
 }
 
-.background__clouds_1 {
+.background__clouds_first {
 	top: 5%;
-	animation: clouds-1 40s linear infinite 0s;
+	animation: clouds-one 40s linear infinite 0s;
 }
 
-@keyframes clouds-1 {
+@keyframes clouds-one {
 	0% {
 		left: -10%;
 	}
@@ -210,12 +210,12 @@ body {
 	}
 }
 
-.background__clouds_2 {
+.background__clouds_second {
 	top: 10%;
-	animation: clouds-2 30s linear infinite 0s;
+	animation: clouds-two 30s linear infinite 0s;
 }
 
-@keyframes clouds-2 {
+@keyframes clouds-two {
 	0% {
 		left: -10%;
 	}
@@ -224,12 +224,12 @@ body {
 	}
 }
 
-.background__clouds_3 {
+.background__clouds_third {
 	top: 15%;
-	animation: clouds-3 20s linear infinite 0s;
+	animation: clouds-three 20s linear infinite 0s;
 }
 
-@keyframes clouds-3 {
+@keyframes clouds-three {
 	0% {
 		left: -10%;
 	}
@@ -1078,14 +1078,15 @@ body {
 	background: #ee4e4e;
 }
 
-/* -------------------------- */
+/* ----------------------- */
 
 .roof {
 	position: relative;
 	z-index: 80;
 }
 
-.roof__element-1 {
+.roof__element-one,
+.roof__element-one_right {
 	position: absolute;
 	width: 8px;
 	height: 26px;
@@ -1093,40 +1094,32 @@ body {
 	box-shadow: inset 3px 0px 2px 0px #5d5e5a, inset -2px 0px 1px 0px #5d5e5a;
 	background: #76786d;
 }
-.roof__element-1_right {
-	position: absolute;
-	width: 8px;
-	height: 26px;
+
+.roof__element-one_right {
 	transform: translate(707px, 346px);
-	box-shadow: inset 3px 0px 2px 0px #5d5e5a, inset -2px 0px 1px 0px #5d5e5a;
-	background: #76786d;
 }
-.roof__element-2 {
+
+.roof__element-two {
 	position: absolute;
 	width: 293px;
 	height: 74px;
 	transform: translate(464px, 274px);
-	/* box-shadow: inset 3px 0px 2px 0px #5d5e5a, inset -2px 0px 1px 0px #5d5e5a; */
 	background: #f65656;
 	border-radius: 70px;
 }
-.roof__element-3 {
+.roof__element-three {
 	position: absolute;
 	width: 283px;
 	height: 64px;
 	transform: translate(469px, 279px);
 	border: 4px solid #fff;
-	/* box-shadow: inset 3px 0px 2px 0px #5d5e5a, inset -2px 0px 1px 0px #5d5e5a; */
 	background: #fb8d84;
 	border-radius: 70px;
 }
-.roof__element-3_anim {
-	animation-name: roof;
-	animation-duration: 4s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+.roof__element-three_anim {
+	animation: roof 4s linear infinite;
 }
+
 @keyframes roof {
 	0% {
 		background: rgb(49, 0, 105);
@@ -1138,7 +1131,9 @@ body {
 		background: rgb(253, 0, 240);
 	}
 }
-.roof__element-4 {
+
+.roof__element-four,
+.roof__element-four_right {
 	position: absolute;
 	width: 9px;
 	height: 9px;
@@ -1146,29 +1141,30 @@ body {
 	border-radius: 50%;
 	transform: translate(495px, 305px);
 }
-.roof__element-4_right {
-	position: absolute;
-	width: 9px;
-	height: 9px;
-	background: #fff;
-	border-radius: 50%;
+
+.roof__element-four_right {
 	transform: translate(720px, 305px);
 }
-/* ---------------------------------- */
-.car__text {
-}
+
+/* --------------------- */
+
 .text {
 	position: relative;
 	z-index: 80;
 }
-.text__element-1 {
+
+.text__element-one {
 	position: absolute;
 	width: 4px;
 	height: 26px;
 	background: #fff;
 	transform: translate(524px, 297px);
 }
-.text__element-2 {
+.text__element-two,
+.text__element-three,
+.text__element-four,
+.text__element-five,
+.text__element-nine {
 	position: absolute;
 	width: 20px;
 	height: 26px;
@@ -1178,42 +1174,33 @@ body {
 	border-radius: 30px 15px 15px 30px;
 	transform: translate(533px, 297px);
 }
-.text__element-3 {
-	position: absolute;
-	width: 20px;
-	height: 26px;
-	border-top: 4px solid #fff;
-	border-left: 4px solid #fff;
-	border-bottom: 4px solid #fff;
+
+.text__element-three {
 	border-radius: 0px 0px 0px 0px;
 	transform: translate(557px, 297px);
 }
-.text__element-4 {
-	position: absolute;
-	width: 20px;
+
+.text__element-four {
 	height: 4px;
 	background: #fff;
 	border-radius: 0px 0px 0px 0px;
 	transform: translate(557px, 308px);
 }
-.text__element-5 {
-	position: absolute;
-	width: 20px;
-	height: 26px;
-	border-top: 4px solid #fff;
-	border-left: 4px solid #fff;
-	border-bottom: 4px solid #fff;
+
+.text__element-five {
 	border-radius: 30px 15px 15px 30px;
 	transform: translate(590px, 297px);
 }
-.text__element-6 {
+
+.text__element-six {
 	position: absolute;
 	width: 4px;
 	height: 26px;
 	background: #fff;
 	transform: translate(613px, 297px);
 }
-.text__element-7 {
+
+.text__element-seven {
 	position: absolute;
 	width: 16px;
 	height: 20px;
@@ -1221,24 +1208,20 @@ body {
 	border-radius: 0 100% 100% 0 / 0 50% 50% 0;
 	transform: translate(613px, 296px);
 }
-.text__element-8 {
+.text__element-eight {
 	position: absolute;
 	width: 4px;
 	height: 11.5px;
 	background: #fff;
 	transform: translate(622px, 312px) skewX(35deg);
 }
-.text__element-9 {
-	position: absolute;
-	width: 20px;
-	height: 26px;
-	border-top: 4px solid #fff;
-	border-left: 4px solid #fff;
-	border-bottom: 4px solid #fff;
+
+.text__element-nine {
 	border-radius: 0px 0px 0px 0px;
 	transform: translate(632px, 297px);
 }
-.text__element-10 {
+
+.text__element-ten {
 	position: absolute;
 	width: 20px;
 	height: 4px;
@@ -1246,21 +1229,19 @@ body {
 	border-radius: 0px 0px 0px 0px;
 	transform: translate(632px, 308px);
 }
-.text__element-11 {
+.text__element-eleven,
+.text__element-twelve {
 	position: absolute;
 	width: 4px;
 	height: 26px;
 	background: #fff;
 	transform: translate(670px, 297px) skewX(15deg);
 }
-.text__element-12 {
-	position: absolute;
-	width: 4px;
-	height: 26px;
-	background: #fff;
+.text__element-twelve {
 	transform: translate(660px, 297px) skewX(-15deg);
 }
-.text__element-13 {
+
+.text__element-thirteen {
 	position: absolute;
 	width: 10px;
 	height: 4px;
@@ -1268,43 +1249,40 @@ body {
 	border-radius: 0px 0px 0px 0px;
 	transform: translate(663px, 310px);
 }
-.text__element-14 {
+
+.text__element-fourteen,
+.text__element_fifteen,
+.text__element-sixteen,
+.text__element-seventeen {
 	position: absolute;
 	width: 4px;
 	height: 26px;
 	background: #fff;
 	transform: translate(680px, 297px);
 }
-.text__element-15 {
-	position: absolute;
-	width: 4px;
-	height: 26px;
-	background: #fff;
+
+.text__element-fifteen {
 	transform: translate(697px, 297px);
 }
-.text__element-16 {
-	position: absolute;
-	width: 4px;
+
+.text__element-sixteen {
 	height: 17px;
-	background: #fff;
 	transform: translate(692px, 297px) skewX(-15deg);
 }
-.text__element-17 {
-	position: absolute;
-	width: 4px;
+
+.text__element-seventeen {
 	height: 17px;
-	background: #fff;
 	transform: translate(685px, 297px) skewX(15deg);
 }
 
-/* ---------------------------------- */
-.car__cat {
-}
+/* ---------------------- */
+
 .cat {
 	position: relative;
 	z-index: 75;
 }
-.cat__element-1 {
+
+.cat__element-one {
 	position: absolute;
 	width: 210px;
 	height: 172px;
@@ -1312,53 +1290,52 @@ body {
 	background: #844f3d;
 	transform: translate(512px, 155px) rotate(6deg);
 }
-.cat__element-2 {
+.cat__element-two,
+.cat__element-three,
+.cat__element-four,
+.cat__element-five,
+.cat__element-six {
 	position: absolute;
 	width: 66px;
 	height: 66px;
 	background: #844f3d;
 	border-radius: 71% 29% 17% 83% / 68% 81% 19% 32%;
 	transform: translate(523px, 136px) rotate(-166deg);
-	box-shadow: inset 2px 1px 5px 0px rgba(0, 0, 0, 0.63), inset -2px -1px 5px 0px rgba(0, 0, 0, 0.63);
+	box-shadow: inset 2px 1px 5px 0px rgba(0, 0, 0, 0.63), inset -2px -1px 5px 
+	0px rgba(0, 0, 0, 0.63);
 }
-.cat__element-3 {
-	position: absolute;
-	width: 66px;
-	height: 66px;
-	background: #844f3d;
-	border-radius: 71% 29% 17% 83% / 68% 81% 19% 32%;
+
+.cat__element-three {
 	transform: translate(669px, 158px) rotate(-84deg);
-	box-shadow: inset 2px 1px 5px 0px rgba(0, 0, 0, 0.63), inset -2px -1px 5px 0px rgba(0, 0, 0, 0.63);
 }
-.cat__element-4 {
-	position: absolute;
+
+.cat__element-four {
 	width: 44px;
 	height: 44px;
-	background: #844f3d;
 	border-radius: 71% 29% 17% 83% / 68% 81% 19% 32%;
 	transform: translate(532px, 144px) rotate(-166deg);
 	box-shadow: inset -1px -10px 2px 0px rgba(0, 0, 0, 0.63);
 }
-.cat__element-5 {
-	position: absolute;
+
+.cat__element-five {
 	width: 44px;
 	height: 44px;
-	background: #844f3d;
 	border-radius: 71% 29% 17% 83% / 68% 81% 19% 32%;
 	transform: translate(680px, 169px) rotate(-84deg);
 	box-shadow: inset -10px -1px 2px 0px rgba(0, 0, 0, 0.63);
 }
-.cat__element-6 {
-	position: absolute;
+
+.cat__element-six {
 	width: 210px;
 	height: 172px;
 	border-radius: 50%;
-	background: #844f3d;
-	box-shadow: inset -5px -5px 5px 0px rgba(0, 0, 0, 0.63), inset 2px 1px 5px 0px rgba(0, 0, 0, 0.63);
+	box-shadow: inset -5px -5px 5px 0px rgba(0, 0, 0, 0.63), inset 2px 1px 5px 
+	0px rgba(0, 0, 0, 0.63);
 	transform: translate(512px, 155px) rotate(6deg);
 }
 
-.cat__element-7 {
+.cat__element-seven,
+.cat__element-eight {
 	position: absolute;
 	width: 20px;
 	height: 15px;
@@ -1368,17 +1345,14 @@ body {
 	border-radius: 500px 500px 0 0;
 	transform: translate(598px, 243px) rotate(-165deg);
 }
-.cat__element-8 {
-	position: absolute;
-	width: 20px;
-	height: 15px;
-	border-left: 3px solid #401812;
-	border-right: 3px solid #401812;
-	border-top: 3px solid #401812;
-	border-radius: 500px 500px 0 0;
+
+.cat__element-eight {
 	transform: translate(616px, 246px) rotate(-172deg);
 }
-.cat__element-9 {
+
+.cat__element-nine,
+.cat__element-ten,
+.cat__element-eleven {
 	position: absolute;
 	width: 18px;
 	height: 18px;
@@ -1386,23 +1360,25 @@ body {
 	background: #f9345e;
 	transform: translate(571px, 231px);
 }
-.cat__element-10 {
-	position: absolute;
-	width: 18px;
-	height: 18px;
-	border-radius: 50%;
-	background: #f9345e;
+
+.cat__element-ten {
 	transform: translate(650px, 242px);
 }
-.cat__element-11 {
-	position: absolute;
+
+.cat__element-eleven {
 	width: 16px;
 	height: 19px;
-	border-radius: 50%;
 	background: #311112;
 	transform: translate(643px, 232px) rotate(14deg);
 }
-.cat__element-12 {
+
+.cat__element-twelve,
+.cat__element-thirteen,
+.cat__element-fourteen,
+.cat__element-fifteen,
+.cat__element-sixteen,
+.cat__element-seventeen,
+.cat__element-eighteen {
 	position: absolute;
 	width: 16px;
 	height: 19px;
@@ -1410,55 +1386,47 @@ body {
 	background: #311112;
 	transform: translate(581px, 223px) rotate(16deg);
 }
-.cat__element-13 {
-	position: absolute;
+
+.cat__element-thirteen {
 	width: 2px;
 	height: 8px;
-	border-radius: 50%;
-	background: #311112;
 	transform: translate(584px, 218px) rotate(-22deg);
 }
-.cat__element-14 {
-	position: absolute;
+
+.cat__element-fourteen {
 	width: 2px;
 	height: 8px;
-	border-radius: 50%;
-	background: #311112;
 	transform: translate(578px, 224px) rotate(-65deg);
 }
-.cat__element-15 {
-	position: absolute;
+
+.cat__element-fifteen {
 	width: 2px;
 	height: 8px;
-	border-radius: 50%;
-	background: #311112;
 	transform: translate(581px, 221px) rotate(-37deg);
 }
-.cat__element-16 {
-	position: absolute;
+
+.cat__element-sixteen {
 	width: 2px;
 	height: 8px;
-	border-radius: 50%;
-	background: #311112;
 	transform: translate(661px, 235px) rotate(-103deg);
 }
-.cat__element-17 {
-	position: absolute;
+
+.cat__element-seventeen {
 	width: 2px;
 	height: 8px;
-	border-radius: 50%;
-	background: #311112;
 	transform: translate(657px, 228px) rotate(-142deg);
 }
-.cat__element-18 {
-	position: absolute;
+
+.cat__element-eighteen {
 	width: 2px;
 	height: 8px;
-	border-radius: 50%;
-	background: #311112;
 	transform: translate(660px, 231px) rotate(-116deg);
 }
-.cat__element-19 {
+
+.cat__element-nineteen,
+.cat__element-twenty,
+.cat__element-twenty-one,
+.cat__element-twenty-two {
 	position: absolute;
 	width: 7px;
 	height: 7px;
@@ -1466,33 +1434,29 @@ body {
 	background: #fff;
 	transform: translate(590px, 223px);
 }
-.cat__element-20 {
-	position: absolute;
-	width: 7px;
-	height: 7px;
-	border-radius: 50%;
-	background: #fff;
+
+.cat__element-twenty {
 	transform: translate(652px, 232px);
 }
-.cat__element-21 {
-	position: absolute;
+
+.cat__element-twenty-one {
 	width: 3px;
 	height: 3px;
-	border-radius: 50%;
-	background: #fff;
 	transform: translate(587px, 230px);
 }
-.cat__element-22 {
-	position: absolute;
+
+.cat__element-twenty-two {
 	width: 3px;
 	height: 3px;
-	border-radius: 50%;
-	background: #fff;
 	transform: translate(648px, 238px);
 }
-/* ---------------------------------- */
-/* Арбуз */
-.cat__element-23 {
+
+/* ------------------- */
+
+/* watermelon */
+
+.cat__element-twenty-three,
+.cat__element-twenty-four {
 	position: absolute;
 	width: 65px;
 	height: 73px;
@@ -1503,16 +1467,15 @@ body {
 	transform: translate(619px, 116px) rotate(-105deg) skew(1deg, 11deg);
 	box-shadow: inset -6px -5px 10px 0px #d3083e;
 }
-.cat__element-24 {
-	position: absolute;
+
+.cat__element-twenty-four {
 	width: 71px;
-	height: 73px;
-	border-radius: 100% 0% 0% 100% / 100% 100% 0% 0%;
 	border-top: 5px solid #598039;
 	border-left: 5px solid #598039;
 	transform: translate(614px, 119px) rotate(-108deg) skew(0deg, 9deg);
 }
-.cat__element-25 {
+
+.cat__element-twenty-five {
 	position: absolute;
 	width: 30px;
 	height: 59px;
@@ -1522,7 +1485,8 @@ body {
 	border-left: 2px solid #f5efad;
 	transform: translate(686px, 115px) rotate(-157deg) skew(26deg, -15deg);
 }
-.cat__element-26 {
+
+.cat__element-twenty-six {
 	position: absolute;
 	width: 30px;
 	height: 59px;
@@ -1531,7 +1495,8 @@ body {
 	border-left: 3px solid #4d6e32;
 	transform: translate(688px, 117px) rotate(-158deg) skew(24deg, -23deg);
 }
-.cat__element-27 {
+
+.cat__element-twenty-seven {
 	position: absolute;
 	width: 10px;
 	height: 13px;
@@ -1539,7 +1504,8 @@ body {
 	background: #fc8d81;
 	transform: translate(668px, 112px) rotate(-237deg) skew(41deg, -3deg);
 }
-.cat__element-28 {
+
+.cat__element-twenty-eight {
 	position: absolute;
 	width: 7px;
 	height: 7px;
@@ -1548,7 +1514,14 @@ body {
 	box-shadow: inset -1px -1px 2px 0px #000;
 	transform: translate(643px, 126px) rotate(-436deg);
 }
-.cat__element-29 {
+
+.cat__element-twenty-nine,
+.cat__element-thirty,
+.cat__element-thirty-one,
+.cat__element-thirty-two,
+.cat__element-thirty-three,
+.cat__element-thirty-four,
+.cat__element-thirty-five {
 	position: absolute;
 	width: 7px;
 	height: 7px;
@@ -1557,58 +1530,26 @@ body {
 	box-shadow: inset -1px -1px 2px 0px #000;
 	transform: translate(666px, 136px) rotate(-480deg);
 }
-.cat__element-30 {
-	position: absolute;
-	width: 7px;
-	height: 7px;
-	border-radius: 25% 75% 0% 100% / 25% 100% 0% 75%;
-	background: #451217;
-	box-shadow: inset -1px -1px 2px 0px #000;
+.cat__element-thirty {
 	transform: translate(666px, 157px) rotate(-491deg);
 }
-.cat__element-31 {
-	position: absolute;
-	width: 7px;
-	height: 7px;
-	border-radius: 25% 75% 0% 100% / 25% 100% 0% 75%;
-	background: #451217;
-	box-shadow: inset -1px -1px 2px 0px #000;
+
+.cat__element-thirty-one {
 	transform: translate(644px, 149px) rotate(-460deg);
 }
 
-.cat__element-32 {
-	position: absolute;
-	width: 7px;
-	height: 7px;
-	border-radius: 25% 75% 0% 100% / 25% 100% 0% 75%;
-	background: #451217;
-	box-shadow: inset -1px -1px 2px 0px #000;
+.cat__element-thirty-two {
 	transform: translate(626px, 136px) rotate(-437deg);
 }
-.cat__element-33 {
-	position: absolute;
-	width: 7px;
-	height: 7px;
-	border-radius: 25% 75% 0% 100% / 25% 100% 0% 75%;
-	background: #451217;
-	box-shadow: inset -1px -1px 2px 0px #000;
+
+.cat__element-thirty-three {
 	transform: translate(696px, 119px) rotate(-557deg);
 }
-.cat__element-34 {
-	position: absolute;
-	width: 7px;
-	height: 7px;
-	border-radius: 25% 75% 0% 100% / 25% 100% 0% 75%;
-	background: #451217;
-	box-shadow: inset -1px -1px 2px 0px #000;
+
+.cat__element-thirty-four {
 	transform: translate(694px, 149px) rotate(-539deg);
 }
-.cat__element-35 {
-	position: absolute;
-	width: 7px;
-	height: 7px;
-	border-radius: 25% 75% 0% 100% / 25% 100% 0% 75%;
-	background: #451217;
-	box-shadow: inset -1px -1px 2px 0px #000;
+
+.cat__element-thirty-five {
 	transform: translate(698px, 134px) rotate(-571deg);
 }
