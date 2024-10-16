@@ -35,35 +35,406 @@ img {
 }
 
 body {
-	font-size: 18px;
+	font-size: 16px;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
-	line-height: 1.2;
+	font-weight: 400;
+	background-color: #f5f5f5;
 }
 
 [class*="__container"] {
-  max-width: 1020px;
-  margin: 0px auto;
+	max-width: 1050px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex: 1 1 auto;
 }
 
 .header {
-  padding: 20px;
+  padding: 30px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 2;
   font-size: 0;
   vertical-align: top;
-  overflow: hidden;
   background: url("../img/header/header_bg.png") 0% / cover no-repeat;
 }
 
+.footer {
+	background: linear-gradient(to bottom, rgb(9, 44, 84) 0%, rgba(125, 185, 
+	232, 0) 100%);
+	padding: 30px;
+  text-shadow: -2px 3px 4px #fff;
+	font-size: 22px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.go__up {
+	font-family: "Indie Flower", sans-serif;
+	color: #ff0000;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.go__up:hover {
+	color: #29c3be;
+	transition: all 0.4s ease-in-out;
+}
+
 .page__title {
+	font-family: "Indie Flower", sans-serif;
 	text-align: center;
 	font-size: 50px;
-  font-weight: 500;
+  font-weight: 700;
+	text-transform: uppercase;
   color: #ff0000;
   text-shadow: -2px 4px 7px #fff;
   letter-spacing: 0.03em;
 }
+
+.promise {
+	padding: 160px 0px 50px;
+}
+
+.promise__header {
+	margin: 0px 0px 68px 0px;
+}
+
+.title *:not(:last-child) {
+	margin: 0px 0px 33px 0px;
+}
+
+.title__label {
+	background: url("../img/dog_page/icons/icon_promises.svg") 0 -2px no-repeat;
+	color: #5d62b5;
+	padding: 0px 0px 0px 35px;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 2.5px;
+	line-height: 2;
+	text-transform: uppercase;
+}
+
+.title__item {
+	font-size: 36px;
+	font-weight: 900;
+	color: #000;
+	line-height: 1.16;
+}
+
+.promise__items {
+	display: flex;
+	margin: 0px -12px;
+	flex-wrap: wrap;
+	row-gap: 24px;
+}
+
+.promise__item {
+	flex: 0 1 33.333%;
+	padding: 0px 12px;
+	min-width: 260px;
+}
+
+.item-promise {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 23px;
+}
+
+.item-promise__img {
+	flex: 0 0 63px;
+}
+
+.item-title {
+	font-weight: 900;
+	font-size: 19px;
+	color: #f2726f;
+	line-height: 1.37;
+}
+
+.item-promise__title:not(:last-child) {
+	margin: 0px 0px 20px 0px;
+}
+
+.item-text {
+	line-height: 1.5;
+}
+
+.services {
+	padding: 100px 0px 112px;
+	position: relative;
+	overflow: hidden;
+}
+
+.services::before {
+	content: "";
+	position: absolute;
+	background: url("../img/dog_page/services/blob_2.png") left -490px no-repeat;
+	left: 50%;
+	transform: translate(180px, 0px);
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.services__container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.services__header {
+	margin: 0px 0px 74px 0px;
+}
+
+.services__items {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 24px;
+	margin: 0px 12px;
+}
+
+.services__items:not(:last-child) {
+	margin: 0px 0px 66px 0px;
+}
+
+.services__item {
+	flex: 1 1 33.333%;
+	padding: 0px 12px;
+	min-width: 300px;
+}
+
+.services__button {
+	align-self: center;
+	background-color: #f2726f;
+	border-radius: 8px;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 2;
+	padding: 12px 25px;
+}
+
+.item-services {
+	background-color: #fff;
+	border-radius: 20px;
+	padding: 50px 44px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	height: 100%;
+}
+
+.item-services__icon {
+	width: 63px;
+	flex: 0 0 63px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.item-services__img {
+	max-width: 100%;
+	max-height: 63px;
+}
+
+.item-services__icon:not(:last-child) {
+	margin: 0px 0px 33px 0px;
+}
+
+.item-services__title:not(:last-child) {
+	margin: 0px 0px 20px 0px;
+}
+
+.item-services__text:not(:last-child) {
+	margin: 0px 0px 20px 0px;
+}
+
+.item-services__text {
+	flex: 1 1 auto;
+}
+
+.item-services__link {
+	color:#f2726f;
+	font-weight: 700;
+}
+
+.title__label_white {
+	color: #fff;
+	background: url("../img/dog_page/icons/icon_impact.svg") 0 -2px no-repeat;
+}
+
+.title__item_white {
+	color: #fff;
+}
+
+.impact {
+	background-color: #29c3be;
+	padding: 0px 0px 212px;
+}
+
+.impact__container {
+	position: relative;
+}
+
+.impact__container::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 50%;
+	transform: translate(93%, 0%);
+	height: 100%;
+	width: 68%;
+	background: url("../img/dog_page/impact/blob_2.png") 0 0 / 100% no-repeat;
+}
+
+.impact__body {
+	display: flex;
+	position: relative;
+	margin: 20px 0px -15px;
+}
+
+.impact__body:not(:last-child) {
+	margin-bottom: 80px;
+}
+
+.impact__content {
+	padding: 0px 15px;
+	flex: 0 0 50%;
+	align-self: flex-end;
+}
+
+.impact__header {
+	max-width: 420px;
+}
+
+.impact__image {
+	padding: 0px 15px;
+	flex: 0 0 50%;
+	margin: -10% 0px 0px;
+}
+
+.impact__img {
+	max-width: 100%;
+	border-radius: 40px;
+}
+
+.impact__items {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin: 0px -12px;
+	row-gap: 24px;
+}
+
+.impact__item {
+	padding: 50px 12px 0px;
+	flex: 0 1 25%;
+}
+
+.item-impact {
+	display: flex;
+	column-gap: 11px;
+	align-items: flex-start;
+}
+
+.item-impact__body {
+	align-self: center;
+}
+
+.item-impact__icon {
+	flex: 0 0 76px;
+}
+
+.item-impact__value {
+	color: #fff;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 1.17;
+}
+
+.item-impact__value:not(:last-child) {
+	margin: 0px 0px 3px 0px;
+}
+
+.item-impact__text {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+	color: #5d62b5;
+}
+
+.appointment {
+    position: relative;
+    margin: -78px 0px 110px 0px;
+    z-index: 20;
+}
+
+.appointment__container {
+    background: #5d62b5;
+    border-radius: 20px;
+}
+
+.appointment__items {
+	display: flex;
+  padding: 43px 76px 46px 70px;
+  row-gap: 20px;
+}
+
+.appointment__item {
+	flex: 0 0 60%;
+  margin: 0px 15px 0px 0px;
+}
+
+.appointment__title {
+  flex: 0 0 562px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.appointment__item-button {
+	flex: 0 1 40%;
+  align-self: center;
+  align-content: center;
+  text-align: right;
+}
+
+.appointment__button {
+  transition: color 0.4s ease-in-out, background 0.4s ease-in-out;
+  display: inline-block;
+  padding: 12px 34px;
+  background: #f2726f;
+  font-size: 12px;
+	font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 7px;
+}
+
+.appointment__button:hover {
+  color: #f2726f;
+  background: #fff;
+}
+
+
+
