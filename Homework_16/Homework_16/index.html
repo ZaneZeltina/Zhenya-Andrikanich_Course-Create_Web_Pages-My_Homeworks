@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+  <title>Homework 15</title>
+</head>
+
+<body class="page">
+	<div class="wrapper">
+		<header id="top" class="header">
+			<h1 class="header__title">
+				Forms and Inputs practice
+			</h1>
+	</header>
+
+	<main class="main">
+		<section class="appointment">
+			<div class="appointment__container">
+				<form class="appointment__form form-appointment" action="#">
+					<h2 class="form-appointment__title">
+						Make an appointment
+					</h2>
+					<div class="form-appointment__inputs">
+						<div class="form-appointment__line">
+							<input class="form-appointment__input" required autocomplete="off" 
+							type="text" name="username" placeholder="name">
+						</div>
+						<div class="form-appointment__line">
+							<input class="form-appointment__input" required autocomplete="off" 
+							type="email" name="email" placeholder="email">
+						</div>
+						<div class="form-appointment__line">
+							<input class="form-appointment__input" required autocomplete="off" 
+							type="tel" name="telephone" placeholder="phone">
+						</div>
+						<div class="form-appointment__line">
+							<input class="form-appointment__input" required autocomplete="off" 
+							type="text" name="services" placeholder="Select services">
+						</div>
+					</div>
+					<textarea class="form-appointment__textarea" name="textarea" id="text" 
+					placeholder="Tell us about your puppers include his/her name">
+				</textarea>
+				<div class="form-appointment__button">
+					<button class="form-appointment__btn" type="submit">
+						Make an appointment
+					</button>
+				</div>
+				</form>
+			</div>
+		</section>
+
+		<section class="shopping-chart-2">
+			<div class="shopping-chart-2__container">
+				<form class="shopping-chart-2__form form-shopping-chart-2" action="#">
+					<h2 class="form-shopping-chart-2__title">
+						Summary
+					</h2>
+					<p class="form-shopping-chart-2__text">
+						Estimate Shipping and Tax
+					</p>
+					<div class="form-shopping-chart-2__country">
+						<div class="form-shopping-chart-2__line">
+							<label class="form-shopping-chart-2__label" for="Country">
+								Country
+							</label>
+							<select class="form-shopping-chart-2__input" required 
+							name="country" id="coutry" title="country">
+							<option disabled selected value="">
+								Please, select the Country
+							</option>
+							<option value="1">Australia</option>
+              <option value="2">Burundi</option>
+              <option value="3">Cape Verde</option>
+              <option value="4">Djibouti</option>
+              <option value="5">El Salvador</option>
+              <option value="6">Falkland Islands</option>
+              <option value="7">Guyana</option>
+						</select>
+						</div>
+						<div class="form-shopping-chart-2__line">
+							<label class="form-shopping-chart-2__label" for="state">
+								State/Province
+							</label>
+							<input class="form-shopping-chart-2__input" name="state" 
+							id="state" type="text">
+						</div>
+						<div class="form-shopping-chart-2__line">
+							<label class="form-shopping-chart-2__label" for="zip">
+								Zip/Postal Code
+							</label>
+							<input class="form-shopping-chart-2__input" name="zip" id="zip" 
+							type="text">
+						</div>
+					</div>
+						<div class="form-shopping-chart-2__radio radio-group">
+							<label class="radio-group__label" for="choise-1">
+								Standard Rate
+							</label>
+							<div class="radio-group__rate rate-radio-group">
+								<input class="rate-radio-group__radio" id="choise-1" 
+								name="delivery" value="delivery-1" type="radio">
+								<label class="rate-radio-group__label" for="choise-1">
+									Price may vary depending on the item/destination. Shop Staff 
+									will contact you. $21.00
+								</label>
+							</div>
+							<label class="rate-radio-group__label" for="choise-2">
+								Pickup from store
+							</label>
+							<div class="radio-group__rate rate-radio-group">
+								<input checked class="rate-radio-group__radio" id="choise-2" 
+								name="delivery" type="radio" value="delivery-2">
+								<label class="rate-radio__label" for="choise-2">
+									1234 Street Address City Address, 1234 $0.00
+								</label>
+							</div>
+						</div>
+						<div class="form-shopping-chart-2__discount">
+							<p class="form-shopping-chart-2__text">
+								Apply Discount Code
+							</p>
+							<div class="form-shopping-chart-2__line">
+								<label class="form-shopping-chart-2__label" for="discount">
+									Enter discount code
+								</label>
+								<input class="form-shopping-chart-2__input" type="text" 
+								name="discount" id="discount" placeholder="Enter discount code">
+							</div>
+						</div>
+						<div class="form-shopping-chart-2__button">
+							<button class="form-shopping-chart__btn" type="submit">
+								Apply Discount
+							</button>
+						</div>
+					</form>
+				</div>
+			</section>
+
+			<section class="register">
+				<div class="register__container">
+					<form class="register__form form-register" action="#">
+						<h2 class="form-register__title">
+							Registered Customers
+						</h2>
+						<p class="form-register__text">
+							If you have an account, sign in with your email address.
+						</p>
+						<div class="form-register__inputs">
+							<div class="form-register__line">
+								<label class="form-register__label" for="email">
+									Email
+									<span class="form-register__asterisk">
+									*
+								</span>
+								</label>
+								<input class="form-register__input" required type="email" 
+								name="email"autocomplete="off" placeholder="Your Email">
+							</div>
+							<div class="form-register__line">
+								<label class="form-register__label" for="password">
+									Password
+									<span class="form-register__asterisk">
+										*
+									</span>
+								</label>
+								<input class="form-register__input" type="password" 
+								name="password" placeholder="password" autocomplete="off" 
+								id="password">
+							</div>
+						</div>
+						<div class="form-register__buttons">
+							<button class="form-register__btn" type="submit">
+								Sign In
+							</button>
+							<a class="form-register__link" href="#">
+								Forgot Your Password?
+							</a>
+						</div>
+					</form>
+				</div>
+			</section>
+
+			<section class="checkout">
+				<div class="checkout__container">
+					<div class="checkout__header">
+						<h2 class="checkout__title">
+							Shipping Address
+						</h2>
+					</div>
+					<form class="checkout__form form-checkout" action="#">
+						<div class="form-checkout__inputs">
+							<div class="form-checkout__line">
+								<label class="form-checkout__label" for="email">
+									Email
+									<span class="form-checkout__asterisk">
+										*
+									</span>
+								</label>
+								<input class="form-checkout__input" autocomplete="off" 
+								type="email" name="email" id="email">
+							</div>
+							<p class="form-checkout__text">
+								You can create an account after checkout.
+							</p>
+							<div class="form-checkout__decor-line"></div>
+							<div class="form-checkout__line">
+								<label class="form-checkout__label" for="firstname">
+									First Name
+									<span class="form-checkout__asterisk">
+										*
+									</span>
+								</label>
+								<input class="form-checkout__input" required autocomplete="off" 
+								type="text" name="firstname" id="firstname">
+							</div>
+							<div class="form-checkout__line">
+								<label class="form-checkout__label" for="lastname">
+									Last Name
+									<span class="form-checkout__asterisk">
+										*
+									</span>
+								</label>
+								<input class="form-checkout__input" required autocomplete="off" 
+								type="text" name="lastname" id="lastname">
+							</div>
+							<div class="form-checkout__line">
+								<label class="form-checkout__label" for="company">
+									Company
+									<span class="form-checkout__asterisk">
+										*
+									</span>
+								</label>
+								<input class="form-checkout__input" required autocomplete="off" 
+								type="text" 
+								name="company" id="company">
+							</div>
+							<div class="form-checkout__line">
+								<label class="form-checkout__label" for="street">
+									Street Address
+									<span class="form-checkout__asterisk">
+										*
+									</span>
+								</label>
+								<input class="form-checkout__input" required autocomplete="off" 
+								type="text" 
+								name="street" id="street">
+							</div>
+							<div class="form-checkout__line">
+								<label class="form-checkout__label" for="city">
+									City
+									<span class="form-checkout__asterisk">
+										*
+									</span>
+								</label>
+								<input class="form-checkout__input" required autocomplete="off" 
+								type="text" name="city" id="city">
+							</div>
+							<div class="form-checkout__line">
+								<label class="form-checkout__label" for="state">
+									State/Province
+									<span class="form-checkout__asterisk">
+										*
+									</span>
+								</label>
+								<select class="form-checkout__select" required name="state" 
+								id="state">
+								<option class="form-checkout__option" disabled selected 
+								value="">
+								Please, select a region, state or province
+							</option>
+							<option class="form-checkout__option" value="2">
+								Aberconwy and Colwyn
+							</option>
+							<option class="form-checkout__option" value="3">
+								Bath and NE Somerset
+							</option>
+							<option class="form-checkout__option" value="4">
+								Caernarfonshire
+							</option>
+							<option class="form-checkout__option" value="5">
+								Denbighshire
+							</option>
+							<option class="form-checkout__option" value="6">
+								East Ayrshire
+							</option>
+							<option class="form-checkout__option" value="7">
+								Flintshire
+							</option>
+							<option class="form-checkout__option" value="8">
+								Gloucestershire
+							</option>
+							<option class="form-checkout__option" value="9">
+								Hampshire
+							</option>
+							<option class="form-checkout__option" value="10">
+								Inverclyde
+							</option>
+							<option class="form-checkout__option" value="11">
+								Kingston Upon Hull
+							</option>
+							<option class="form-checkout__option" value="12">
+								Other
+							</option>
+							</select>
+							</div>
+							<div class="form-checkout__line">
+								<label class="form-checkout__label" for="zip">
+									Zip/Postal Code
+									<span class="form-checkout__asterisk">
+										*
+									</span>
+								</label>
+								<input class="form-checkout__input" required autocomplete="off" 
+								name="zip" id="zip" type="text">
+							</div>
+							<div class="form-checkout__line">
+								<label class="form-checkout__label" for="country">
+									Country
+									<span class="form-checkout__asterisk">
+										*
+									</span>
+								</label>
+								<select class="form-checkout__select" required name="country" 
+								id="country">
+								<option class="form-checkout__option" disabled selected 
+								value="">
+								United States
+								</option>
+								<option class="form-checkout__option" value="2">
+									Atlanta
+								</option>
+								<option class="form-checkout__option" value="3">
+									Boise
+								</option>
+								<option class="form-checkout__option" value="4">
+									Carson City
+								</option>
+								<option class="form-checkout__option" value="5">
+									Des Moines
+								</option>
+								<option class="form-checkout__option" value="6">
+									East Ayrshire
+								</option>
+								<option class="form-checkout__option" value="7">
+									Flintshire
+								</option>
+								<option class="form-checkout__option" value="8">
+									Pago Pago
+								</option>
+								<option class="form-checkout__option" value="9">
+									Harrisburg
+								</option>
+								<option class="form-checkout__option" value="10">
+									Indianapolis
+								</option>
+								<option class="form-checkout__option" value="11">
+									Madison
+								</option>
+								<option class="form-checkout__option" value="12">
+									Other
+								</option>
+							</select>
+							</div>
+							<div class="form-checkout__line">
+								<label class="form-checkout__label" for="phone">
+									Phone Number
+									<span class="form checkout__asterisk">
+										*
+									</span>
+								</label>
+								<input class="form-checkout__input" required autocomplete="off" 
+								type="tel" name="phone" id="phone">
+							</div>
+							<div class="form-checkout__decor-line form-checkout__decor-
+							line_width">
+						</div>
+						<div class="form-checkout__radio radio-checkout">
+							<label class="radio-checkout__label" for="price-1">
+								Standard Rate
+							</label>
+							<div class="radio-checkout__rate radio-checkout-group">
+								<input class="radio-checkout-group__radio" type="radio" 
+								id="price-1">
+								<label class="radio-checkout-group__label" for="price-1">
+									Price may vary depending on the item/destination. Shop Staff 
+									will contact you. $21.00
+								</label>
+								<p class="radio-checkout-group__price">
+									$21.00
+								</p>
+							</div>
+							<label class="radio-checkout__label" for="price-2">
+								Pickup from store
+							</label>
+							<div class="radio-checkout__rate radio-checkout-group">
+								<input class="radio-checkout-group__input" name="radio" 
+								id="price-2" value="price-2" type="radio">
+								<label class="radio-checkout-group__label" for="price-2">
+									1234 Street Address City Address, 1234
+								</label>
+								<p class="radio-checkout-group__price">
+									$0.00
+								</p>
+							</div>
+						</div>
+						<div class="form-checkout__button">
+							<button class="form-checkout__btn" type="submit">
+								Next
+							</button>
+						</div>
+						</div>
+					</form>
+				</div>
+			</section>
+
+	</main>
+	<footer class="footer">
+		<a href="#top" class="footer__link">Back to top</a>
+	</footer>
+</div>
+</body>
+
+</html>
