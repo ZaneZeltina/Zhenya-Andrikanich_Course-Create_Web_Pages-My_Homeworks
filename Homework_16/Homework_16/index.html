@@ -43,9 +43,7 @@
 							type="text"placeholder="Select Service">
 						</div>
 					</div>
-					<textarea class="form-appointment__textarea" name="textarea" 
-					placeholder="Tell us about your puppers include his/her name">
-					</textarea>
+					<textarea placeholder="Tell us about your puppers include his/her name" class="form-appointment__textarea" name="textarea"></textarea>
 					<div class="form-appointment__button">
 						<button class="form-appointment__btn" type="submit">
 							Make an appointment
@@ -55,21 +53,21 @@
 			</div>
 		</section>
 
-		<section class="shopping-chart-2">
-			<div class="shopping-chart-2__container">
-				<form class="shopping-chart-2__form form-shopping-chart-2" action="#">
-					<h2 class="form-shopping-chart-2__title">
+		<section class="shopping-cart-2">
+			<div class="shopping-cart-2__container">
+				<form class="shopping-cart-2__form form-shopping-cart-2" action="#">
+					<h2 class="form-shopping-cart-2__title">
 						Summary
 					</h2>
-					<p class="form-shopping-chart-2__text">
+					<p class="form-shopping-cart-2__text">
 						Estimate Shipping and Tax
 					</p>
-					<div class="form-shopping-chart-2__country">
-						<div class="form-shopping-chart-2__line">
-							<label class="form-shopping-chart-2__label" for="Country">
+					<div class="form-shopping-cart-2__country">
+						<div class="form-shopping-cart-2__line">
+							<label class="form-shopping-cart-2__label" for="Country">
 								Country
 							</label>
-							<select class="form-shopping-chart-2__input" required 
+							<select class="form-shopping-cart-2__input" required 
 							name="country" id="coutry" title="country">
 							<option disabled selected value="">
 								Please, select the Country
@@ -83,58 +81,61 @@
               <option value="7">Guyana</option>
 						</select>
 						</div>
-						<div class="form-shopping-chart-2__line">
-							<label class="form-shopping-chart-2__label" for="state">
+						<div class="form-shopping-cart-2__line">
+							<label class="form-shopping-cart-2__label" for="state">
 								State/Province
 							</label>
-							<input class="form-shopping-chart-2__input" name="state" 
+							<input class="form-shopping-cart-2__input" name="state" 
 							id="state" type="text">
 						</div>
-						<div class="form-shopping-chart-2__line">
-							<label class="form-shopping-chart-2__label" for="zip">
+						<div class="form-shopping-cart-2__line">
+							<label class="form-shopping-cart-2__label" for="zip">
 								Zip/Postal Code
 							</label>
-							<input class="form-shopping-chart-2__input" name="zip" id="zip" 
+							<input class="form-shopping-cart-2__input" name="zip" id="zip" 
 							type="text">
 						</div>
 					</div>
-						<div class="form-shopping-chart-2__radio radio-group">
+						<div class="form-shopping-cart-2__radio radio-group">
 							<label class="radio-group__label" for="choise-1">
 								Standard Rate
 							</label>
-							<div class="radio-group__rate rate-radio-group">
-								<input class="rate-radio-group__radio" id="choise-1" 
-								name="delivery" value="delivery-1" type="radio">
-								<label class="rate-radio-group__label" for="choise-1">
-									Price may vary depending on the item/destination. Shop Staff 
+							<div class="form-shopping-cart-2__radio radio-group">
+                <label class="radio-group__label" for="choise1">
+									Standard Rate
+								</label>
+              <div class="radio-group__rate rate-radio-group">
+                <input class="rate-radio-group__radio" type="radio" 
+								id="choise1" name="delivery" value="delivery1">
+                <label class="rate-radio-group__label" for="choise1">
+                  Price may vary depending on the item/destination. Shop Staff 
 									will contact you. $21.00
 								</label>
 							</div>
-							<label class="rate-radio-group__label" for="choise-2">
+							<label class="radio-group__label" for="choise2">
 								Pickup from store
 							</label>
 							<div class="radio-group__rate rate-radio-group">
-								<input checked class="rate-radio-group__radio" id="choise-2" 
-								name="delivery" type="radio" value="delivery-2">
-								<label class="rate-radio__label" for="choise-2">
-									1234 Street Address City Address, 1234 $0.00
+								<input checked class="rate-radio-group__radio" type="radio" 
+								id="choise2" name="delivery" value="delivery2">
+								<label class="rate-radio-group__label" for="choise2">
+                  1234 Street Address City Address, 1234 $0.00
 								</label>
 							</div>
 						</div>
-						<div class="form-shopping-chart-2__discount">
-							<p class="form-shopping-chart-2__text">
-								Apply Discount Code
-							</p>
-							<div class="form-shopping-chart-2__line">
-								<label class="form-shopping-chart-2__label" for="discount">
+						<div class="form-shopping-cart-2__discount">
+							<p class="form-shopping-cart-2__subtitle">Apply Discount Code</p>
+							<div class="form-shopping-cart-2__line">
+								<label class="form-shopping-cart-2__label" for="discount">
 									Enter discount code
 								</label>
-								<input class="form-shopping-chart-2__input" type="text" 
-								name="discount" id="discount" placeholder="Enter discount code">
+								<input class="form-shopping-cart-2__input" 
+								placeholder="Enter discount code" 
+								id="discount" type="text" name="discount">
 							</div>
-						</div>
-						<div class="form-shopping-chart-2__button">
-							<button class="form-shopping-chart__btn" type="submit">
+            </div>
+						<div class="form-shopping-cart-2__button">
+							<button class="form-shopping-cart__btn" type="submit">
 								Apply Discount
 							</button>
 						</div>
@@ -144,47 +145,48 @@
 
 			<section class="register">
 				<div class="register__container">
-					<form class="register__form form-register" action="#">
+					<form action="#" class="register__form form-register">
 						<h2 class="form-register__title">
 							Registered Customers
 						</h2>
-						<p class="form-register__text">
+						<p class="form-register__subtitle">
 							If you have an account, sign in with your email address.
 						</p>
 						<div class="form-register__inputs">
 							<div class="form-register__line">
-								<label class="form-register__label" for="email">
-									Email
-									<span class="form-register__asterisk">
-									*
-								</span>
-								</label>
-								<input class="form-register__input" required type="email" 
-								name="email"autocomplete="off" placeholder="Your Email">
-							</div>
-							<div class="form-register__line">
-								<label class="form-register__label" for="password">
-									Password
+								<label class="form-register__label" for="registerEmail">
+                  Email
 									<span class="form-register__asterisk">
 										*
 									</span>
 								</label>
-								<input class="form-register__input" type="password" 
-								name="password" placeholder="password" autocomplete="off" 
-								id="password">
+								<input required autocomplete="off" placeholder="Your Name" 
+								class="form-register__input" type="email" name="email" 
+								id="registerEmail">
 							</div>
-						</div>
-						<div class="form-register__buttons">
-							<button class="form-register__btn" type="submit">
-								Sign In
-							</button>
-							<a class="form-register__link" href="#">
-								Forgot Your Password?
-							</a>
-						</div>
-					</form>
-				</div>
-			</section>
+							<div class="form-register__line">
+								<label class="form-register__label" for="registerPassword">
+                  Password
+									<span class="form-register__asterisk">
+                    *
+									</span>
+								</label>
+								<input required autocomplete="off" placeholder="Your Password"
+                  class="form-register__input" type="password" name="password" 
+									id="registerPassword">
+								</div>
+							</div>
+							<div class="form-register__buttons">
+								<button class="form-register__btn" type="submit">
+									Sign In
+								</button>
+								<a href="#" class="form-register__link">
+									Forgot Your Password?
+								</a>
+							</div>
+						</form>
+					</div>
+				</section>
 
 			<section class="checkout">
 				<div class="checkout__container">
@@ -377,17 +379,17 @@
 								<input class="form-checkout__input" required autocomplete="off" 
 								type="tel" name="phone" id="phone">
 							</div>
-							<div class="form-checkout__decor-line form-checkout__decor-
-							line_width">
+							<div class="form-checkout__decor-line 
+							form-checkout__decor-line_width">
 						</div>
 						<div class="form-checkout__radio radio-checkout">
-							<label class="radio-checkout__label" for="price-1">
+							<label class="radio-checkout__label" for="price1">
 								Standard Rate
 							</label>
 							<div class="radio-checkout__rate radio-checkout-group">
 								<input class="radio-checkout-group__radio" type="radio" 
-								id="price-1">
-								<label class="radio-checkout-group__label" for="price-1">
+								id="price1" name="radioCheckout" value="price1">
+								<label class="radio-checkout-group__label" for="price1">
 									Price may vary depending on the item/destination. Shop Staff 
 									will contact you. $21.00
 								</label>
@@ -395,13 +397,13 @@
 									$21.00
 								</p>
 							</div>
-							<label class="radio-checkout__label" for="price-2">
+							<label class="radio-checkout__label" for="price2">
 								Pickup from store
 							</label>
 							<div class="radio-checkout__rate radio-checkout-group">
-								<input class="radio-checkout-group__input" name="radio" 
-								id="price-2" value="price-2" type="radio">
-								<label class="radio-checkout-group__label" for="price-2">
+								<input checked class="radio-checkout-group__radio" type="radio" 
+								id="price2" name="radioCheckout" value="price2">
+								<label class="radio-checkout-group__label" for="price2">
 									1234 Street Address City Address, 1234
 								</label>
 								<p class="radio-checkout-group__price">
