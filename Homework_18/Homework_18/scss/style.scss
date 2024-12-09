@@ -1,0 +1,114 @@
+// &display=swap&subset=cyrillic-ext
+
+// Connect Fonts with Google Fonts
+
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower:regular,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Festive:regular&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600,700&display=swap");
+
+// Connect Fonts use local files
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueCondensedBlack.woff2") format("woff2"), url("../fonts/HelveticaNeueCondensedBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueCondensedBold.woff2") format("woff2"), url("../fonts/HelveticaNeueCondensedBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueRegular.woff2") format("woff2"), url("../fonts/HelveticaNeueRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Connect other SCSS files
+
+@import "_reset";
+
+// =====================
+
+img {
+  max-width: 100%;
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	line-height: 1;
+	color: #000;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+
+[class*="__container"] {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+._ibg {
+	position: relative;
+}
+._ibg img {
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+// Mainīgie
+
+$button: #34c759;
+
+// Klasiskais siets, trīs standarta izmēri:
+
+// Nr. 1
+
+@media (max-width: 1140px) {
+  [class*="__container"] {
+    /* max-width: 970px; */
+  }
+}
+
+// Nr. 2
+
+@media (max-width: 991.98px) {
+  [class*="__container"] {
+    /* max-width: 750px; */
+  }
+}
+
+// Nr. 3
+
+@media (max-width: 767.98px) {
+  [class*="__container"] {
+    /* max-width: none; */
+  }
+}
+
+// =====================
+
