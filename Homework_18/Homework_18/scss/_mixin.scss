@@ -1,0 +1,30 @@
+@mixin btnBgRB ($colorBg, $borderRadius, $borderWidth, $borderColor) {
+    background-color: $colorBg;
+    border-radius: $borderRadius+px;
+    border: $borderWidth+px solid $borderColor;
+    cursor: pointer;
+}
+@mixin ibg ($position: center) {
+    position: relative;
+    img {
+        object-fit: cover;
+        object-position: $position;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+@mixin lineGWBgP ($gapLine, $widthLine, $colorLine, $positionLine) {
+    display: flex;
+    flex-direction: column;
+    gap: $gapLine;
+    &::after {
+        content: "";
+        width: $widthLine;
+        height: 2px;
+        background-color: $colorLine;
+        align-self: $positionLine;
+    }
+}

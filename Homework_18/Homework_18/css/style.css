@@ -93,9 +93,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100%;
-  overflow: hidden;
-  background: #1a1a1a;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 [class*=__container] {
@@ -118,6 +121,13 @@ body {
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.footer {
+  font-size: 30px;
+  padding: 50px 0;
+  color: rgba(255, 255, 255, 0.5019607843);
+  text-align: center;
 }
 
 @media (max-width: 1140px) {

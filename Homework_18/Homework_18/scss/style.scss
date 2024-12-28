@@ -40,6 +40,8 @@
 
 @import "_reset";
 
+@import "_mixin";
+
 // =====================
 
 img {
@@ -56,10 +58,11 @@ body {
 
 .wrapper {
   display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  overflow: hidden;
-  background: #1a1a1a;
+	flex-direction: column;
+}
+
+.main {
+  flex: 1 0 auto;
 }
 
 [class*="__container"] {
@@ -80,9 +83,23 @@ body {
 	left: 0;
 }
 
+.footer {
+  font-size: 30px;
+  padding: 50px 0;
+  color: #ffffff80;
+  text-align: center;
+  background-color: $darkGray;
+}
+
 // Mainīgie
 
-$button: #34c759;
+$green: #34c759;
+$white: #fff;
+$black: #1A1A1A;
+$gray: #303030;
+$darkGray: #252525;
+$lightGray: rgba(255, 255, 255, 0.5);
+$fontFamily: 'Helvetica', sans-serif;
 
 // Klasiskais siets, trīs standarta izmēri:
 
@@ -112,3 +129,339 @@ $button: #34c759;
 
 // =====================
 
+%btnOrder {
+    padding: 15px 32px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 1;
+}
+
+// header
+
+.header {
+    position: fixed;
+	top: 0;
+    left: 0;
+    width: 100%;
+	z-index: 10;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    // .header__container
+    &__container {
+        display: flex;
+        gap: 30px;
+        padding: 33px 15px;
+        @media (max-width: 991.98px) {
+            padding: 23px 15px;
+        }
+        @media (max-width: 767.98px) {
+            padding: 20px 15px;
+        }
+    }
+    // .header__logo
+    &__logo {
+        flex: 1 0 auto;
+    }
+    // .header__menu
+    // &__menu {
+    // }
+}
+.logo {
+    display: flex;
+    gap: 9px;
+    align-items: flex-end;
+    max-width: 207px;
+}
+.menu {
+    // .menu__items
+    &__items {
+        display: flex;
+        column-gap: 45px;
+        @media (max-width: 767.98px) {
+            display: none;
+        }
+    }
+    // .menu__item
+    &__item {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5;
+        opacity: 0;
+        @for $var from 1 to 5 {
+            $delay: 0.3s * (5-$var);
+            $menu: menu+$var;
+            &:nth-child(#{$var}) {
+                animation: $menu 0.4s ease $delay 1 forwards;
+            }
+        }
+        @for $var from 1 to 5 {
+            $menu: menu+$var;
+            $right: 100% * (5-$var);
+            $left: -200% * $var;
+            @keyframes #{$menu} {
+                0% {
+                    transform: translateX(#{$right}) scale(1);
+                    opacity: 0;
+                }
+                50% {
+                    transform: translateX(#{$left}) scale(2);
+                    opacity: 1;
+                }
+                100% {
+                    transform: translate (0, 0) scale(1);
+                    opacity: 1;
+                }
+            }
+        }
+    }    
+        
+    // .menu__link
+    &__link {
+        color: $white;
+        transition: 0.2s ease 0s;
+        @include lineGWBgP (0, 100%, $green, center);
+        &::after {
+            transform: scale(0);
+            transition: 1s ease 0s;
+        }
+        &.active {
+            color: $green;
+        }
+        &:hover {
+            color: $green;
+            &::after {
+                transform: scale(1);
+                transition: 0.05s ease 0s;
+            } 
+        }
+    }
+    // &__burger {        
+    // }
+}
+
+.burger {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    @media (max-width: 767.98px) {
+        display: block;
+    }
+    span,
+    span::before,
+    span::after {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $green;
+        position: relative;
+    }
+    span::before {
+        content: "";
+        top: -10px;
+    }
+    span::after {
+        content: "";
+        top: 8px;
+    }
+}
+#burger-input {
+    opacity: 0;
+}
+
+// First block
+
+.hero {
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0.0001) 0%, #1A1A1A 100%), linear-gradient(0deg, rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0.5)), url(../img/hero/hero_image.jpg) center / cover no-repeat;
+    // .hero__container
+    &__container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 170px 15px 30px;
+        @media (max-width: 991.98px) {
+            padding: 140px 15px 30px;
+        }
+        @media (max-width: 767.98px) {
+            padding: 100px 15px 30px;
+        }
+    }
+    // .hero__title
+    &__title {
+        margin: 0 0 16px 0;
+    }
+    // .hero__description
+    &__description {
+        max-width: 595px;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: -0.2px;
+        color: $white;
+        opacity: 0.7;
+        margin: 0 0 40px 0;
+        // .hero__description_uppercase
+        &_uppercase {
+            text-transform: uppercase;
+        }
+        @media (max-width: 767.98px) {
+            font-size: 14px;
+        }
+    }
+    // .hero__button
+    &__button {
+        margin: 0 0 70px 0;
+    }
+    // .hero__infocards
+    &__infocards {
+        width: 100%;
+        display: flex;
+        margin: 0 -15px;
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+            width: auto;
+            gap: 15px;
+        }
+    }
+    // .hero__info-time
+    &__info-time {
+        &::before {
+            content: "";
+            background: url(../img/hero/ic_watch_later.svg) center no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+    }
+    // .hero__info-address
+    &__info-address {
+        &::before {
+            content: "";
+            background: url(../img/hero/ic_near_me.svg) center no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+    }
+    // .hero__info-phone
+    &__info-phone {
+        &::before {
+            content: "";
+            background: url(../img/hero/ic_call.svg) center no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+.main-title {
+    // .main-title__row
+    &__row {
+        font-size: 72px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: capitalize;
+        color: $white;
+        @media (max-width: 991.98px) {
+            font-size: 52px;
+        }
+        @media (max-width: 767.98px) {
+            font-size: 40px;
+        }
+        @media (max-width: 500px) {
+            display: flex;
+            flex-direction: column;
+            font-size: 40px;
+        }
+        // .main-title__row-bold
+        }
+    &__row-bold {
+        font-weight: 700;
+        white-space: nowrap;
+    }
+}
+.main-button {
+    @include btnBgRB ($green, 43, 3, $green);
+    display: inline-block;
+    padding: 23px 55px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    color: $black;
+    white-space: nowrap;
+    transition: 0.2s ease 0s;
+    &:hover {
+        @include btnBgRB ($black, 43, 3, $green);
+        color: $green;
+        opacity: 0.8;
+    }
+}
+.infocard {
+    flex: 1 0 33.3%;
+    min-width: 245px;
+    padding: 0 17px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    &:hover .infocard__value {
+        color: $green;
+        transform: scale(1.1);
+    }
+    @media (max-width: 767.98px) {
+        flex-direction: row;
+    }
+    // .infocard__value
+    &__value {
+        font-size: 16px;
+        line-height: 1;
+        text-align: center;
+        color: $white;
+        transition: 0.2s ease 0s;
+        @media (max-width: 767.98px) {
+            //text-align: left;
+        }
+    }
+    // .info card__name
+    &__name {
+        font-size: 14px;
+        line-height: 1;
+        text-align: center;
+        color: #999999;
+        @media (max-width: 767.98px) {
+            display: none;
+        }
+    }
+}
+
+// How-it-works
+
+.how-it-works {
+  // .how-it-works__container
+  &__container {
+    margin-bottom: 5.4%;
+    @media (max-width: 767.98px) {
+      padding: 0;
+    }
+  }
+  // .how-it-works__title
+  &__title {
+    width: 100%;
+    margin: 0% 0% 2.7% 0%;
+  }
+  //.how-it-works__cards
+  &__cards {
+    margin: 0px -15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    @media(max-width: 767.98px) {
+      margin: 0px;
+    }
+  }
+}

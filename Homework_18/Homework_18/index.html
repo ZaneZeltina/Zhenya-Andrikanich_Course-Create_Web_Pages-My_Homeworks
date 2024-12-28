@@ -11,116 +11,119 @@
 
 <body class="page">
 	<div class="wrapper">
-		<header id="top" class="header">
+		 <header class="header">
 			<div class="header__container">
-				<div class="header__body">
-					<div class="header__logo logo">
-						<a class="logo__ibg" href="#hero">
-							<img class="logo__img" src="img/header/logo.svg" 
-							alt="Healthy Switcher Logo">
-						</a>
-					</div>
-					<div class="header__burger burger">
-						<button class="burger__btn" id="choise" type="button">
-							<span class="burger__line"></span>
-						</button>
-						<nav class="header__menu menu">
-							<ul class="menu__list">
-								<li class="menu__item">
-									<a class="menu__link menu__link_active" href="#dish">Menu</a>
-								</li>
-								<li class="menu__item">
-									<a class="menu__link" href="#recipes">Recipes</a>
-								</li>
-								<li class="menu__item">
-									<a class="menu__link" href="#chefs">Chefs</a>
-								</li>
-								<li class="menu__item">
-									<a class="menu__link" href="#contacts">Contacts</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
+				<div class="header__logo">
+          <a class="logo" href="#">
+            <img src="img/hero/logo.svg" alt="Logo">
+            <img src="img/hero/logo_text.svg" alt="Logo">
+					</a>
 				</div>
+				<nav class="header__menu menu">
+					<ul class="menu__items">
+            <li class="menu__item">
+							<a class="menu__link active" href="#"
+							>Menu
+						</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">
+								Recipes
+							</a>
+						</li>
+						<li class="menu__item"><a class="menu__link" href="#">
+							Chefs
+						</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#">
+							Contacts
+						</a>
+					</li>
+				</ul>
+				<div class="menu__burger burger">
+					<input type="checkbox" name="burger-input" id="burger-input">
+					<label class="burger" for="burger-input"><span></span></label>
+				</div>
+			 </nav>
 			</div>
-	</header>
+		</header>
 
-	<main class="page">
-		<section class="hero" id="hero">
+	<main class="main">
+		<section class="hero">
 			<div class="hero__container">
-				<div class="hero__body">
-					<h2 class="hero__title">
+				<div class="hero__title main-title">
+					<h2 class="main-title__row">
 						Your
-						<span class="hero__decore-title">
-							favorite food
+						<span class="main-title__row_bold">
+							Favorite food
 						</span>
-						delivered
-						<span class="hero__decore-title">
+					</h2>
+					<h2 class="main-title__row">
+						Delivered
+						<span class="main-title__row_bold">
 							hot & fresh
 						</span>
 					</h2>
-					<p class="hero__text">
-						HEALTHY SWITCHER chefs do all the prep work, like peeling, chopping & marinating, so you can cook a fresh homemade dinner in just 15 minutes.
-					</p>
-					<a class="hero__btn" href="#">
-						Order Now
+				</div>
+				<p class="hero__description">
+					<span class="hero__description hero__description_upercase">
+						HEALTHY SWITCHER
+					</span>
+					chefs do all the prep work, like peeling, chopping & marinating, so you can cook a fresh homemade dinner in just 15 minutes.
+				</p>
+				<div class="hero__button">
+					<a class="main-button" href="#">
+						order now
 					</a>
 				</div>
-				<div class="hero__contact contact-hero">
-					<div class="contact-hero__item">
-						<div class="contact-hero__body">
-							<div class="contact-hero__ibg">
-								<img class="contact-hero__img" src="img/hero/hero_icons/ic_watch_later.svg" alt="watch icon">
-							</div>
-							<h3 class="contact-hero__title">
-								Today 10:00 am - 7:00 pm
-							</h3>
-							<p class="contact-hero__text">
-								Working hours
-							</p>
+				<div class="hero__infocards">
+					<div class="infocard hero__info_time">
+						<div class="infocard__value">
+							Today 10:00 am - 7:00 pm
+						</div>
+						<div class="infocard__name">
+							Working hours
 						</div>
 					</div>
-					<div class="contact-hero__item">
-						<div class="contact-hero__body">
-							<div class="contact-hero__ibg">
-								<img class="contact-hero__img" src="img/hero/hero_icons/ic_near_me.svg" alt="arrow icon">
-							</div>
-							<a class="contact-hero__title" href="#">
-								Velyka Vasylkivska 100
-							</a>
-							<p class="contact-hero__text">
-								Get Directions
-							</p>
+					<div class="infocard hero__info_address">
+						<div class="infocard__value">
+							Velyka Vasylkivska 100
+						</div>
+						<div class="infocard__name">
+							Get Directions
 						</div>
 					</div>
-					<div class="contact-hero__item">
-						<div class="contact-hero__body">
-							<div class="contact-hero__ibg">
-								<img class="contact-hero__img" 
-								src="img/hero/hero_icons/ic_call.svg" alt="phone icon">
-							</div>
-							<a href="tel:+380638332415" class="contact-hero__title">
-								+38 (063) 833 24 15
-							</a>
-							<p class="contact-hero__text">
-								Call Online
-							</p>
-						</div>
+					<div class="infocard hero__info_phone">
+						<a class="infocard__value" href="tel:+380638332415">
+							+38 (063)833 24 15
+						</a>
 					</div>
-				</div>
-				<div class="hero__ibg">
-					<picture>
-						<source srcset="img/hero/hero_bg.webp" type="image/webp">
-						<img class="hero__img" src="img/hero/hero_bg.jpg" 
-						alt="page background">
-					</picture>
+					<div class="infocard__name">
+						Call Online
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="about-us">
-			<div class="about-us__container">
-				
+		<section class="how-it-works">
+			<div class="how-it-works__container">
+				<div class="how-it-works__title event">
+					<div class="event__title-bg">
+						Work
+					</div>
+					<h3 class="event__title">
+						how it works
+					</h3>
+				</div>
+				<div class="how-it-works__cards">
+					<div class="task-card">
+						<div class="task-card__box">
+
+							
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
